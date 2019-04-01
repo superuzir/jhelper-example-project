@@ -1,8 +1,12 @@
 #include <iostream>
 
-class %ClassName% {
+#include "../library/lib.hpp"
+
+class %ClassName%
+{
 public:
-	void solve(std::istream& in, std::ostream& out) {
+	void solve(std::istream& in, std::ostream& out)
+	{
 
 	}
 };
