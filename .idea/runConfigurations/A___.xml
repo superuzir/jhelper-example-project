@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Разнообразные строки" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="ARaznoobraznieStroki" cppPath="tasks/ARaznoobraznieStroki.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="8&#10;fced&#10;xyz&#10;r&#10;dabcef&#10;az&#10;aa&#10;bad&#10;babc&#10;" output="Yes&#10;Yes&#10;Yes&#10;Yes&#10;No&#10;No&#10;No&#10;No&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
