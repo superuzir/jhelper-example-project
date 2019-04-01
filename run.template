@@ -57,7 +57,7 @@ int main() {
 			if (test.has_output) {
 				bool result = jhelper::check(test.output, out.str());
 				allOK = allOK && result;
-				std::cout << "Result: " << (result ? "OK" : "Wrong answer") << std::endl;
+				std::cout << "Result: " << (result ? "\033[1;32mOK\033[0m" : "\033[1;31mFAIL\033[0m") << std::endl;
 			}
 			std::cout << "Time: " << currentTime << std::endl;
 		}
