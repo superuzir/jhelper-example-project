@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D. Разнообразная гирлянда" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="DRaznoobraznayaGirlyanda" cppPath="tasks/DRaznoobraznayaGirlyanda.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="9&#10;RBGRRBRGG&#10;" output="2&#10;RBGRGBRGR&#10;" active="true" />
+      <test input="8&#10;BBBGBRRR&#10;" output="2&#10;BRBGBRGR&#10;" active="true" />
+      <test input="13&#10;BBRRRRGGGGGRR&#10;" output="6&#10;BGRBRBGBGBGRG&#10;" active="true" />
+      <test input="2&#10;RR" output="1&#10;RG" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
