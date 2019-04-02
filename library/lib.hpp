@@ -26,4 +26,10 @@ typedef vector<string> vs;
 typedef vector<ll> vll;
 typedef vector<pll> vpll;
 
-template<typename T> static vector<T> vin(ll n){ vector<T> ret; forn(i, n){ T val; cin >> val; ret.pb(val); } return ret; }
+template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
+template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
+
+#define read_vll(n) vin<ll>(n, in)
+#define read_vs(n)  vin<string>(n, in)
+#define read_s()    read<string>(in)
+#define read_ll()   read<ll>(in)
