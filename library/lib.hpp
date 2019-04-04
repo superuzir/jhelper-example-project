@@ -33,3 +33,8 @@ template<typename T> static T read(std::istream& in){ T val; in >> val; return v
 #define read_vs(n)  vin<string>(n, in)
 #define read_s()    read<string>(in)
 #define read_ll()   read<ll>(in)
+
+#define max_ll std::numeric_limits<ll>::max()
+#define min_ll std::numeric_limits<ll>::min()
+#define min3(a,b,c) std::min(std::min(a, b), c)
+#define max3(a,b,c) std::max(std::max(a, b), c)
