@@ -16,6 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/lib.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/library/lib.hpp" afterDir="false" />
     </list>
     <ignored path="jhelper-example-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,19 +40,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/BFizpraktikum.cpp">
+        <entry file="file://$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/7/bits/stl_algo.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1151">
-              <caret line="2076" column="4" selection-start-line="2076" selection-start-column="4" selection-end-line="2076" selection-end-column="4" />
+            <state relative-caret-position="450">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -59,20 +51,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/lib.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="342">
+              <caret line="32" column="106" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
               <folding>
                 <element signature="e#1029#1041#0" expanded="true" />
                 <element signature="e#1287#1313#0" expanded="true" />
-                <element signature="e#1580#1592#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output/main.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file:///usr/include/c++/7/bits/stl_algobase.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="367" selection-start-line="367" selection-end-line="367" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -105,8 +100,9 @@
         <option value="$PROJECT_DIR$/tasks/CPismo.cpp" />
         <option value="$PROJECT_DIR$/testrunner/main.cpp" />
         <option value="$PROJECT_DIR$/output/main.cpp" />
-        <option value="$PROJECT_DIR$/library/lib.hpp" />
         <option value="$PROJECT_DIR$/tasks/BFizpraktikum.cpp" />
+        <option value="$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp" />
+        <option value="$PROJECT_DIR$/library/lib.hpp" />
       </list>
     </option>
   </component>
@@ -144,6 +140,11 @@
               <item name="jhelper-example-project" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jhelper-example-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jhelper-example-project" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -179,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Task.B. Физпрактикум">
+  <component name="RunManager" selected="Task.C. Степени двойки">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -271,6 +272,7 @@
       <item itemvalue="Task.D. Цветные ботинки" />
       <item itemvalue="Task.B. Физпрактикум" />
       <item itemvalue="Task.B. Махмуд, Ехаб и двудольность" />
+      <item itemvalue="Task.C. Степени двойки" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -296,16 +298,15 @@
       <workItem from="1554477868252" duration="96000" />
       <workItem from="1554477983844" duration="261000" />
       <workItem from="1554478264928" duration="9000" />
-      <workItem from="1554478288157" duration="3472000" />
+      <workItem from="1554478288157" duration="6038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49104000" />
+    <option name="totallyTimeSpent" value="51670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20437567" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -328,7 +329,7 @@
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Event Log" order="5" sideWeight="0.5121163" weight="0.21077909" />
-      <window_info active="true" anchor="right" id="Run" order="6" sideWeight="0.4878837" visible="true" weight="0.24332978" />
+      <window_info anchor="right" id="Run" order="6" sideWeight="0.4878837" weight="0.24332978" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,13 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/AKanikuli.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/5/bits/stl_queue.h" />
     <entry file="file:///usr/include/c++/5/bits/stl_multiset.h" />
     <entry file="file://$PROJECT_DIR$/tasks/BApproksimizaciyaPostoyannogoDiapazona.cpp">
@@ -473,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/CPismo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task.template">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -520,18 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/lib.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#1029#1041#0" expanded="true" />
-            <element signature="e#1287#1313#0" expanded="true" />
-            <element signature="e#1580#1592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -546,6 +521,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/CPismo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/AKanikuli.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/stl_algobase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="367" selection-start-line="367" selection-end-line="367" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/lib.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="32" column="106" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
+          <folding>
+            <element signature="e#1029#1041#0" expanded="true" />
+            <element signature="e#1287#1313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
