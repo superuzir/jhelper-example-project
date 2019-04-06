@@ -30,6 +30,7 @@ typedef vector<pll> vpll;
 
 template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
 template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
+template<typename T> void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
 
 #define read_vll(n) vin<ll>(n, in)
 #define read_vs(n)  vin<string>(n, in)
