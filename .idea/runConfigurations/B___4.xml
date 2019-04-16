@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Сделай равными" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BSdelaiRavnimi" cppPath="tasks/BSdelaiRavnimi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="6&#10;1 4 4 7 4 1&#10;" output="3&#10;" active="true" />
+      <test input="5&#10;2 2 5 2 5&#10;" output="3&#10;" active="true" />
+      <test input="4&#10;1 3 3 7&#10;" output="-1&#10;" active="true" />
+      <test input="2&#10;2 8&#10;" output="3&#10;" active="true" />
+      <test input="3&#10;0 0 0" output="0" active="true" />
+      <test input="3&#10;0 1 3" output="-1" active="true" />
+      <test input="3&#10;10 10 10" output="0" active="true" />
+      <test input="3&#10;9 10 11" output="1" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

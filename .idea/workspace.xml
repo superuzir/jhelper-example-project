@@ -16,7 +16,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/lib.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/library/lib.hpp" afterDir="false" />
     </list>
     <ignored path="jhelper-example-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,32 +39,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp">
+        <entry file="file://$PROJECT_DIR$/tasks/EDveKomandi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="233">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/lib.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="32" column="106" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
-              <folding>
-                <element signature="e#1029#1041#0" expanded="true" />
-                <element signature="e#1287#1313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/7/bits/stl_algobase.h">
+        <entry file="file:///usr/include/c++/7/ext/new_allocator.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="173">
-              <caret line="367" selection-start-line="367" selection-end-line="367" />
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
         </entry>
@@ -103,6 +89,11 @@
         <option value="$PROJECT_DIR$/tasks/BFizpraktikum.cpp" />
         <option value="$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp" />
         <option value="$PROJECT_DIR$/library/lib.hpp" />
+        <option value="$PROJECT_DIR$/tasks/AVosstanovlenieTrehChisel.cpp" />
+        <option value="$PROJECT_DIR$/tasks/BSdelaiRavnimi.cpp" />
+        <option value="$PROJECT_DIR$/tasks/CKotikGurman.cpp" />
+        <option value="$PROJECT_DIR$/tasks/DIdushiiRobot.cpp" />
+        <option value="$PROJECT_DIR$/tasks/EDveKomandi.cpp" />
       </list>
     </option>
   </component>
@@ -180,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Task.C. Степени двойки">
+  <component name="RunManager" selected="Task.E. Две команды">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -273,6 +264,11 @@
       <item itemvalue="Task.B. Физпрактикум" />
       <item itemvalue="Task.B. Махмуд, Ехаб и двудольность" />
       <item itemvalue="Task.C. Степени двойки" />
+      <item itemvalue="Task.A. Восстановление трех чисел" />
+      <item itemvalue="Task.B. Сделай равными" />
+      <item itemvalue="Task.C. Котик-гурман" />
+      <item itemvalue="Task.D. Идущий робот" />
+      <item itemvalue="Task.E. Две команды" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -299,21 +295,23 @@
       <workItem from="1554477983844" duration="261000" />
       <workItem from="1554478264928" duration="9000" />
       <workItem from="1554478288157" duration="6038000" />
+      <workItem from="1555424986968" duration="6855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51670000" />
+    <option name="totallyTimeSpent" value="58525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20437567" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.37554586" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.43777293" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -322,14 +320,14 @@
       <window_info anchor="bottom" id="Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49676898" weight="0.32954547" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4911147" visible="true" weight="0.2914847" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Event Log" order="5" sideWeight="0.5121163" weight="0.21077909" />
-      <window_info anchor="right" id="Run" order="6" sideWeight="0.4878837" weight="0.24332978" />
+      <window_info active="true" anchor="right" id="Run" order="6" sideWeight="0.4878837" visible="true" weight="0.27321237" />
+      <window_info anchor="right" id="Messages" order="7" sideWeight="0.4911147" weight="0.2913554" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,16 +536,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/7/bits/stl_algobase.h">
+    <entry file="file://$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="367" selection-start-line="367" selection-end-line="367" />
+        <state relative-caret-position="450">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/lib.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="480">
           <caret line="32" column="106" selection-start-line="32" selection-start-column="106" selection-end-line="32" selection-end-column="106" />
           <folding>
             <element signature="e#1029#1041#0" expanded="true" />
@@ -556,10 +554,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/CStepeniDvoiki.cpp">
+    <entry file="file:///usr/include/c++/7/bits/stl_algobase.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="5505">
+          <caret line="367" selection-start-line="367" selection-end-line="367" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/AVosstanovlenieTrehChisel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/BSdelaiRavnimi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/CKotikGurman.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/DIdushiiRobot.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/7/ext/new_allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/EDveKomandi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
         </state>
       </provider>
     </entry>
