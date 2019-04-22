@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Будильники повсюду" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CBudilnikiPovsyudu" cppPath="tasks/CBudilnikiPovsyudu.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3 5&#10;3 12 18&#10;2 6 5 3 3&#10;" output="YES&#10;3 4&#10;" active="true" />
+      <test input="4 2&#10;1 5 17 19&#10;4 5&#10;" output="NO&#10;" active="true" />
+      <test input="4 2&#10;1 5 17 19&#10;2 1&#10;" output="YES&#10;1 1&#10;" active="true" />
+      <test input="4 2&#10;1 5 17 19&#10;1 1" output="YES&#10;1 1" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Разверни подстроку" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="ARazverniPodstroku" cppPath="tasks/ARazverniPodstroku.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="7&#10;abacaba&#10;" output="YES&#10;2 3&#10;" active="true" />
+      <test input="6&#10;aabcfg&#10;" output="NO&#10;" active="true" />
+      <test input="4&#10;bbba" output="YES&#10;3 4 " active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
