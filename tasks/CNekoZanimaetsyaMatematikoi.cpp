@@ -14,8 +14,8 @@ public:
 //		{
 //			print a + k, b + k, lcm(a + k, b + k);
 //		}
-		
-		
+
+
 		if(a > b)
 		{
 			ll c = a;
@@ -24,7 +24,7 @@ public:
 		}
 
 		ll c = b % a;
-		
+
 		if(c == 0)
 		{
 			print 0;
@@ -33,7 +33,7 @@ public:
 		{
 			print b - 2 * a;
 		}
-		else 
+		else
 		{
 			if(b % c)
 				print c - (b % c);

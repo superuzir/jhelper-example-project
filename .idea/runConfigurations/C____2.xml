@@ -11,6 +11,7 @@
       <test input="10 7" output="2" active="true" />
       <test input="17 8" output="1" active="true" />
       <test input="12 3" output="0" active="true" />
+      <test input="12 1" output="0" active="true" />
     </tests>
     <method v="2" />
   </configuration>
