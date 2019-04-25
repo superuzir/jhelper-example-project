@@ -71,10 +71,10 @@ int main() {
 
 	}
 	if(allOK) {
-		std::cout << "All OK" << std::endl;
+		std::cout << "\033[1;32mAll OK\033[0m" << std::endl;
 	}
 	else {
-		std::cout << "Some cases failed" << std::endl;
+		std::cout << "\033[1;31mSome cases failed\033[0m" << std::endl;
 	}
 	std::cout << "Maximal time: " << maxTime << "s." << std::endl;
 	return 0;
