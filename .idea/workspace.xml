@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="jhelper-example-project" targetName="testrunner" />
       <config projectName="jhelper-example-project" targetName="jhelper_example_project" />
-      <config projectName="jhelper-example-project" targetName="output" />
       <config projectName="jhelper-example-project" targetName="test" />
+      <config projectName="jhelper-example-project" targetName="testrunner" />
+      <config projectName="jhelper-example-project" targetName="output" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -15,8 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e173ed55-e541-424a-82e1-b5da979c74d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/C____2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/C____2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/CNekoZanimaetsyaMatematikoi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/CNekoZanimaetsyaMatematikoi.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="jhelper-example-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +38,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/DPriravnyaiIhVse.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/CNekoZanimaetsyaMatematikoi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -94,6 +105,7 @@
         <option value="$PROJECT_DIR$/tasks/ANekoIVinograd.cpp" />
         <option value="$PROJECT_DIR$/tasks/BKoshachePreobrazovanieFurfure.cpp" />
         <option value="$PROJECT_DIR$/tasks/CNekoZanimaetsyaMatematikoi.cpp" />
+        <option value="$PROJECT_DIR$/tasks/DPriravnyaiIhVse.cpp" />
       </list>
     </option>
   </component>
@@ -114,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,6 +152,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,6 +258,7 @@
       <item itemvalue="CMake Application.output" />
       <item itemvalue="CMake Application.test" />
       <item itemvalue="CMake Application.testrunner" />
+      <item itemvalue="Task.D. Приравняй их все" />
       <item itemvalue="Task.A. Bit++" />
       <item itemvalue="Task.A. The Beatles" />
       <item itemvalue="Task.A. Каникулы" />
@@ -307,14 +320,16 @@
       <workItem from="1555853481134" duration="1925000" />
       <workItem from="1555943127247" duration="8359000" />
       <workItem from="1556116796777" duration="6481000" />
+      <workItem from="1556171410137" duration="1315000" />
+      <workItem from="1556172757290" duration="71000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75670000" />
+    <option name="totallyTimeSpent" value="77056000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20437567" />
@@ -322,7 +337,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" visible="true" weight="0.36899564" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.36899564" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -337,7 +352,7 @@
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Event Log" order="5" sideWeight="0.5121163" weight="0.21077909" />
-      <window_info active="true" anchor="right" id="Run" order="6" sideWeight="0.4878837" visible="true" weight="0.27321237" />
+      <window_info anchor="right" id="Run" order="6" sideWeight="0.4878837" weight="0.27321237" />
       <window_info anchor="right" id="Messages" order="7" sideWeight="0.4911147" weight="0.2913554" />
     </layout>
   </component>
@@ -388,7 +403,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tasks/ARaznoobraznieStroki.cpp" />
     <entry file="file://$PROJECT_DIR$/submission.template">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -538,13 +552,7 @@
     <entry file="file://$PROJECT_DIR$/output/main.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///usr/include/c++/7/bits/stl_algo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1151">
-          <caret line="2076" column="4" selection-start-line="2076" selection-start-column="4" selection-end-line="2076" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/include/c++/7/bits/stl_algo.h" />
     <entry file="file://$PROJECT_DIR$/tasks/BFizpraktikum.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -573,13 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/7/bits/stl_algobase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5505">
-          <caret line="367" selection-start-line="367" selection-end-line="367" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/include/c++/7/bits/stl_algobase.h" />
     <entry file="file://$PROJECT_DIR$/tasks/AVosstanovlenieTrehChisel.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -622,13 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/7/ext/new_allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/include/c++/7/ext/new_allocator.h" />
     <entry file="file://$PROJECT_DIR$/tasks/BRicariMnogougolnogoStola.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -654,13 +650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/7/numeric">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/include/c++/7/numeric" />
     <entry file="file://$PROJECT_DIR$/tasks/CBudilnikiPovsyudu.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -682,24 +672,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/ANekoIVinograd.cpp">
+    <entry file="file://$PROJECT_DIR$/tasks/ANekoIVinograd.cpp" />
+    <entry file="file://$PROJECT_DIR$/tasks/BKoshachePreobrazovanieFurfure.cpp" />
+    <entry file="file:///usr/include/c++/5/bits/stl_iterator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state relative-caret-position="300">
+          <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/BKoshachePreobrazovanieFurfure.cpp">
+    <entry file="file://$PROJECT_DIR$/tasks/DPriravnyaiIhVse.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="450">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/CNekoZanimaetsyaMatematikoi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
