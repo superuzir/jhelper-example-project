@@ -12,7 +12,7 @@ public:
 		
 		forn(i, n)
 		{
-			vec[i] = { read_ll(), i + 1 };
+			vec[i] = { read_ll(), i };
 		}
 		
 		sort(all(vec));
@@ -30,17 +30,38 @@ public:
 			
 			b = e;
 		}
+		
+		ll tgt_i = vec[md.fi].se;
+		
+		
+		sort(all(vec), by(second));
 
 		print vec.size() - (md.se - md.fi);
 
-		nfor(i, md.fi)
+		
+		
+		for(int i = tgt_i - 1; i >= 0; i--)
 		{
-			print 1, vec[i].second, vec[i + 1].second;
+			ll l = vec[i].fi;
+			ll r = vec[i + 1].fi;
+			
+			if(l != r)
+			{
+				print l < r ? 1 : 2, i + 1, i + 2;
+				vec[i].fi = r;
+			}
 		}
 
-		for(int i = md.se; i < vec.size(); i++)
+		for(int i = tgt_i + 1; i < vec.size(); i++)
 		{
-			print 2, vec[i].second, vec[i - 1].second;
+			ll l = vec[i - 1].fi;
+			ll r = vec[i].fi;
+
+			if(l != r)
+			{
+				print l > r ? 1 : 2, i + 1, i;
+				vec[i].fi = l;
+			}
 		}
 	}
 };

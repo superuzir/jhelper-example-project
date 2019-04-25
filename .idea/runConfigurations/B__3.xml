@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Лента" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BLenta" cppPath="tasks/BLenta.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4 100 2&#10;20 30 75 80&#10;" output="17&#10;" active="true" />
+      <test input="5 100 3&#10;1 2 4 60 87&#10;" output="6&#10;" active="true" />
+      <test input="4 100 1&#10;20 30 75 80" output="61" active="true" />
+      <test input="4 100 4&#10;20 30 75 80" output="4" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
