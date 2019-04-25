@@ -7,6 +7,7 @@ using namespace std;
 #define forn(i, n)  for(ll i = 0; i < ll(n); ++i)
 #define forn1(i, n) for(ll i = 1; i < ll(n); ++i)
 #define nfor(i, n)  for(ll i = ll(n) - 1; i >= 0; --i)
+#define forr(elem, vec) for(auto & elem : vec)
 struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout(std::ostream& out) : space(false), out(out) {} ~WhiteSpacedCout() { out << std::endl; }  WhiteSpacedCout & start() {return *this;} template <typename T> WhiteSpacedCout &operator , (const T &t) { if (space) out << ' '; else space = true; out << t; return *this; } };
 #define print WhiteSpacedCout(out).start(),
 #define all(c) c.begin(), c.end()
