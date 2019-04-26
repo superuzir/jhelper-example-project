@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Длинное число" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BDlinnoeChislo" cppPath="tasks/BDlinnoeChislo.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;1337&#10;1 2 5 4 6 6 3 1 9&#10;" output="1557&#10;" active="true" />
+      <test input="5&#10;11111&#10;9 8 7 6 5 4 3 2 1&#10;" output="99999&#10;" active="true" />
+      <test input="2&#10;33&#10;1 1 1 1 1 1 1 1 1&#10;" output="33&#10;" active="true" />
+      <test input="4&#10;1234&#10;8 1 1 8 1 1 1 1 1" output="8234" active="true" />
+      <test input="4&#10;1234&#10;8 2 3 8 1 1 1 1 1" output="8238" active="true" />
+      <test input="4&#10;1234&#10;1 1 3 8 1 1 1 1 1" output="1238" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

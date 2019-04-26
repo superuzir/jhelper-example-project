@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C1. Возрастающая подпоследовательность (упрощенная версия)" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="C1VozrastayushayaPodposledovatelnostUproshennayaVersiya" cppPath="tasks/C1VozrastayushayaPodposledovatelnostUproshennayaVersiya.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;2 1 5 4 3&#10;" output="4&#10;LRRR&#10;" active="true" />
+      <test input="7&#10;1 3 5 6 7 4 2&#10;" output="7&#10;LRLRLLR&#10;" active="true" />
+      <test input="3&#10;1 2 3&#10;" output="3&#10;LLR&#10;" active="true" />
+      <test input="4&#10;1 2 4 3&#10;" output="4&#10;LLRR&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

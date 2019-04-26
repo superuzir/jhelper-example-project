@@ -17,6 +17,50 @@ class CYuhaoISkobki
 
 		return op - cl;
 	}
+	
+	bool isBegin(string s)
+	{
+		if(s[0] == ')')
+			return false;
+		
+		ll op = 0;
+		
+		forr(c, s)
+		{
+			if(c == '(')
+				op++;
+			else
+				op--;
+			
+			if(op < 0)
+				return false;
+		}
+		
+		return true;
+	}
+
+	bool isEnd(string s)
+	{
+		if(s.back() == '(')
+			return false;
+
+		ll op = 0;
+
+		nfor(i, s.size())
+		{
+			char c = s[i];
+			
+			if(c == ')')
+				op++;
+			else
+				op--;
+
+			if(op < 0)
+				return false;
+		}
+
+		return true;
+	}
 
 public:
 	void solve(std::istream& in, std::ostream& out)
@@ -24,52 +68,31 @@ public:
 		ll n = read_ll();
 		vs str = read_vs(n);
 
-		multiset<ll> set_l;
-		multiset<ll> set_r;
+		multiset<ll> set;
 		
 		ll balanced = 0;
 
 		forr(s, str)
 		{
-			char l = *s.begin();
-			char r = *s.rbegin();
+			bool beg = isBegin(s);
+			bool end = isEnd(s);
 			
-			if(l == ')' && r == '(')
-				continue;
-			else 
-			{
-				ll bal = balance(s);
-				if(bal == 0)
-					balanced++;
-				else
-				{
-					if(l == '(' && r == '(')
-						set_l.insert(bal);
-
-					if(l == ')' && r == ')')
-						set_r.insert(bal);
-
-					if(l == '(' && r == ')')
-					{
-						if(bal > 0)
-							set_l.insert(bal);
-						else
-							set_r.insert(bal);
-					}
-				}
-			}
+			if(beg)
+				set.insert(balance(s));
+			else if(end)
+				set.insert(balance(s));
 		}
 
-		ll ans = balanced / 2;
+		ll ans = 0;
 
-		while(set_l.size())
+		while(set.size())
 		{
-			ll a = *set_l.begin();
-			set_l.erase(set_l.begin());
+			ll a = *set.begin();
+			set.erase(set.begin());
 
-			if(auto b = set_r.find(-a); b != set_r.end())
+			if(auto b = set.find(-a); b != set.end())
 			{
-				set_r.erase(b);
+				set.erase(b);
 				ans++;
 			}
 		}
