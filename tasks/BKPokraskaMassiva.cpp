@@ -27,10 +27,7 @@ public:
 
 		ll skvoz_k = 1;
 		
-		for(auto b = el.begin(), e = el.begin(); e != el.end();)
-		{
-			e = find_if(b, el.end(), [&](Elem elem){ return b->val != elem.val; });
-
+		itersame(all(el), [&](auto b, auto e){
 			ll k1 = 1;
 
 			for(auto it = b; it != e; ++ it)
@@ -38,7 +35,7 @@ public:
 				if(k1 > k)
 				{
 					print "NO";
-					return;
+					exit(0);
 				}
 
 				it->color = skvoz_k;
@@ -47,9 +44,7 @@ public:
 				if(skvoz_k > k)
 					skvoz_k = 1;
 			}
-
-			b = e;
-		}
+		}, eq(val));
 
 		sort(all(el), by(idx));
 

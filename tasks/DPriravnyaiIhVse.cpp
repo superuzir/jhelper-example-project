@@ -18,27 +18,18 @@ public:
 		sort(all(vec));
 
 		auto md = make_pair(0, 0);
-		
-		for(auto b = 0, e = 0; e < vec.size();)
+
+		itersame(all(vec), [&](auto b, auto e)
 		{
-			e = find_if(vec.begin() + e, vec.end(), [&](pll pr){ return pr.first != vec[b].first; }) - vec.begin();
-			
-			auto dist = e - b;
-			
 			if(e - b > md.se - md.fi)
-				md = {b, e};
-			
-			b = e;
-		}
+				md = {b - vec.begin(), e - vec.begin()};
+		}, eq(fi));
 		
 		ll tgt_i = vec[md.fi].se;
-		
 		
 		sort(all(vec), by(second));
 
 		print vec.size() - (md.se - md.fi);
-
-		
 		
 		for(int i = tgt_i - 1; i >= 0; i--)
 		{

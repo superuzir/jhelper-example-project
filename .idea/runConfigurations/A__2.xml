@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Пранк" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="APrank" cppPath="tasks/APrank.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="6&#10;1 3 4 5 6 9&#10;" output="2&#10;" active="true" />
+      <test input="3&#10;998 999 1000&#10;" output="2&#10;" active="true" />
+      <test input="5&#10;1 2 3 4 5&#10;" output="4&#10;" active="true" />
+      <test input="7&#10;1 2 3 5 7 8 9" output="2" active="true" />
+      <test input="6&#10;1 2 5 7 8 9" output="1" active="true" />
+      <test input="6&#10;1 2 5 6 8 9" output="1" active="true" />
+      <test input="6&#10;2 3 4 6 7 8" output="1" active="true" />
+      <test input="8&#10;2 3 4 6 7 8 9 10" output="3" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

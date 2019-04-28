@@ -29,20 +29,10 @@ public:
 
 		ll max_dif = 0;
 
-		for(auto it = vec.begin(); it != vec.end();)
+		itersame(all(vec), [&](auto b, auto e)
 		{
-			ll sum_to_find = it->first;
-
-			auto to = std::find_if(it, vec.end(), [=](const pll & p){
-				return p.first != sum_to_find;
-			});
-
-			max_dif = std::max(max_dif, (to - 1)->second - it->second);
-
-//			print *it, *(to - 1);
-			
-			it = to;
-		}
+			max_dif = std::max(max_dif, (e - 1)->second - b->second);
+		}, eq(fi));
 
 		print max_dif;
 	}
