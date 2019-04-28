@@ -13,6 +13,7 @@ struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout
 #define all(c) c.begin(), c.end()
 #define rall(c) c.rbegin(), c.rend()
 #define by(x) [](const auto& a, const auto& b) { return a.x < b.x; } // C++14
+#define eq(x) [](const auto& a, const auto& b) { return a.x == b.x; } // C++14
 #define fi first
 #define se second
 #define th third
@@ -32,6 +33,7 @@ typedef vector<pll> vpll;
 template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
 template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
 template<typename T> void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
+template <typename It, typename T = typename It::value_type, typename Pr = typename std::function<void(It, It)>, typename Eq = typename std::function<bool(T, T)> >void itersame(It begin, It end, Pr process, Eq equal = std::equal_to<T>()){for (auto b = begin, e = begin; e != end;){e = find_if(b, end, [&](T pr) { return !equal(pr, *b); }); process(b, e); b = e; }}
 
 #define read_vll(n) vin<ll>(n, in)
 #define read_vs(n)  vin<string>(n, in)
