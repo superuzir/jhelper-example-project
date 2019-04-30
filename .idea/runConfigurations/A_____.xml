@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Ох уж эти палиндромы" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AOhUzhEtiPalindromi" cppPath="tasks/AOhUzhEtiPalindromi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;oolol&#10;" output="ololo&#10;" active="true" />
+      <test input="16&#10;gagadbcgghhchbdf&#10;" output="abccbaghghghgdfd&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
