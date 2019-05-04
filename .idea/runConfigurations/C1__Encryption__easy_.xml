@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C1. Encryption (easy)" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="C1EncryptionEasy" cppPath="tasks/C1EncryptionEasy.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4 10&#10;3 4 7 2&#10;" output="16&#10;" active="true" />
+      <test input="10 12&#10;16 3 24 13 9 8 7 5 12 12&#10;" output="13&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

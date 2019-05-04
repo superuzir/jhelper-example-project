@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Совместимая пара" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="ASovmestimayaPara" cppPath="tasks/ASovmestimayaPara.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2 2&#10;20 18&#10;2 14&#10;" output="252&#10;" active="true" />
+      <test input="5 3&#10;-1 0 1 2 3&#10;-1 0 1&#10;" output="2&#10;" active="true" />
+      <test input="3 3&#10;-5 -3 -2&#10;-5 -3 -2" output="15" active="true" />
+      <test input="3 3&#10;5 -3 -2&#10;-5 -3 -2" output="10" active="true" />
+      <test input="3 3&#10;2 2 2&#10;4 4 4" output="8" active="true" />
+      <test input="3 3&#10;2 2 2&#10;0 0 0" output="0" active="true" />
+      <test input="3 3&#10;-2 0 2&#10;1 1 -1" output="2" active="true" />
+      <test input="3 3&#10;-2 0 0&#10;1 1 -1" output="0" active="true" />
+      <test input="3 3&#10;2 0 0&#10;1 1 -1" output="0" active="true" />
+      <test input="3 3&#10;2 2 2&#10;-1 -1 -1" output="-2" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

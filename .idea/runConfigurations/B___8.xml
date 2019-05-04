@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Противные пары" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BProtivniePari" cppPath="tasks/BProtivniePari.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="14&#10;abcd&#10;gg&#10;codeforces&#10;abaca&#10;aabb&#10;aacc&#10;abc&#10;abd&#10;cba&#10;dba&#10;abab&#10;acd&#10;abcde&#10;abcdef" output="cadb&#10;gg&#10;sooeeccrfd&#10;No answer&#10;No answer&#10;aacc&#10;No answer&#10;adb&#10;No answer&#10;adb&#10;No answer&#10;cad&#10;ecadb&#10;ecafdb&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

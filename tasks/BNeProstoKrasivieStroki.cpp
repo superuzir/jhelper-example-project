@@ -2,16 +2,12 @@
 
 #include "../library/lib.hpp"
 
-class AOhUzhEtiPalindromi
+class BNeProstoKrasivieStroki
 {
 public:
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
-		string str = read_s();
-
-		sort(all(str));
-		
-		print str;
+		vll vec = read_vll(n);
 	}
 };
