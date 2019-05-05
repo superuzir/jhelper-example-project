@@ -22,32 +22,31 @@ public:
 			if(m1[i][j] > m2[i][j])
 				swap(m1[i][j], m2[i][j]);
 		}
-
-
-		forn1(i, n)
+		
+		forn(i, n)
 		forn1(j, m)
 		{
-			ll e11 = m1[i - 1][j - 1];
-			ll e12 = m1[i - 1][j];
-			ll e21 = m1[i][j - 1];
-			ll e22 = m1[i][j];
+			ll e11 = m1[i][j - 1];
+			ll e12 = m1[i][j];
+			ll e21 = m2[i][j - 1];
+			ll e22 = m2[i][j];
 			
-			if(e11 >= e12 || e11 >= e21 || e12 >= e22 || e21 >= e22)
+			if(e11 >= e12 || e21 >= e22)
 			{
 				print "Impossible";
 				return;
 			}
 		}
-		
+
 		forn1(i, n)
-		forn1(j, m)
+		forn(j, m)
 		{
-			ll e11 = m2[i - 1][j - 1];
-			ll e12 = m2[i - 1][j];
-			ll e21 = m2[i][j - 1];
+			ll e11 = m1[i - 1][j];
+			ll e12 = m1[i][j];
+			ll e21 = m2[i - 1][j];
 			ll e22 = m2[i][j];
-			
-			if(e11 >= e12 || e11 >= e21 || e12 >= e22 || e21 >= e22)
+
+			if(e11 >= e12 || e21 >= e22)
 			{
 				print "Impossible";
 				return;

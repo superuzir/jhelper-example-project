@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Крестики-нолики" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BKrestikiNoliki" cppPath="tasks/BKrestikiNoliki.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="... ... ...&#10;... ... ...&#10;... ... ...&#10;&#10;... ... ...&#10;... ... ...&#10;... x.. ...&#10;&#10;... ... ...&#10;... ... ...&#10;... ... ...&#10;6 4&#10;" output="... ... ... &#10;... ... ... &#10;... ... ... &#10;&#10;... ... ... &#10;... ... ... &#10;... x.. ... &#10;&#10;!!! ... ... &#10;!!! ... ... &#10;!!! ... ... &#10;&#10;" active="true" />
+      <test input="xoo x.. x..&#10;ooo ... ...&#10;ooo ... ...&#10;&#10;x.. x.. x..&#10;... ... ...&#10;... ... ...&#10;&#10;x.. x.. x..&#10;... ... ...&#10;... ... ...&#10;7 4&#10;" output="xoo x!! x!! &#10;ooo !!! !!! &#10;ooo !!! !!! &#10;&#10;x!! x!! x!! &#10;!!! !!! !!! &#10;!!! !!! !!! &#10;&#10;x!! x!! x!! &#10;!!! !!! !!! &#10;!!! !!! !!! &#10;&#10;" active="true" />
+      <test input="o.. ... ...&#10;... ... ...&#10;... ... ...&#10;&#10;... xxx ...&#10;... xox ...&#10;... ooo ...&#10;&#10;... ... ...&#10;... ... ...&#10;... ... ...&#10;5 5&#10;" output="o!! !!! !!! &#10;!!! !!! !!! &#10;!!! !!! !!! &#10;&#10;!!! xxx !!! &#10;!!! xox !!! &#10;!!! ooo !!! &#10;&#10;!!! !!! !!! &#10;!!! !!! !!! &#10;!!! !!! !!! &#10;&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
