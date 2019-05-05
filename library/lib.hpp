@@ -26,6 +26,7 @@ typedef pair<int,int> pii;
 typedef pair<ll,ll> pll;
 typedef vector<string> vs;
 typedef vector<ll> vll;
+typedef vector<vll> vvll;
 typedef vector<pll> vpll;
 
 template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
