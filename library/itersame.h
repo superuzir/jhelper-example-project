@@ -8,3 +8,5 @@ void itersame(It begin, It end, Pr process, Eq equal = std::equal_to<T>())
 		b = e;
 	}
 }
+
+#define itersameall(c, cmd) itersame(all(c), [&](auto b, auto e){ cmd })
