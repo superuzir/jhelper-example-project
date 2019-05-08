@@ -20,6 +20,7 @@ struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout
 
 template<typename T1, typename T2> std::ostream &operator<<(std::ostream &s, const std::pair<T1,T2> &x){ s << "pair(" << x.first << " ," << x.second << ')'; return s; }
 template<typename T> std::ostream &operator<<(std::ostream &s, const std::vector<T> &x){ if(x.empty()){ s << "vector(empty)"; return s;} s << "vector("; for(size_t i = 0; i < x.size() - 1; i++){ s << x[i] << ", "; } s << x[x.size() - 1] << ')'; return s; }
+template<typename T> std::ostream &operator<<(std::ostream &s, const std::multiset<T> &x){ if(x.empty()){ s << "multiset(empty)"; return s;} s << "multiset "; forr(v, x){ s << v << " "; } return s; }
 template<typename T> std::istream & operator >> (std::istream &s, T & pair){ s >> pair.fi >> pair.se; return s;  }
 
 typedef long long ll;
