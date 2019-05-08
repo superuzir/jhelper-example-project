@@ -7,6 +7,7 @@
       <test input="3 1 3&#10;5 5 5" output="15&#10;1 2" active="true" />
       <test input="2 1 1&#10;10 20" output="20" active="true" />
       <test input="2 2 1&#10;10 20" output="30" active="true" />
+      <test input="3 1 2&#10;10 20 0" output="30&#10;1" active="true" />
     </tests>
     <method v="2" />
   </configuration>

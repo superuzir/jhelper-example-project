@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Обмен соседних элементов" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CObmenSosednihElementov" cppPath="tasks/CObmenSosednihElementov.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="6&#10;1 2 5 3 4 6&#10;01110&#10;" output="YES&#10;" active="true" />
+      <test input="6&#10;1 2 5 3 4 6&#10;01010&#10;" output="NO&#10;" active="true" />
+      <test input="6&#10;1 2 5 3 4 6&#10;01111" output="YES" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

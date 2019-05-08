@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Минимальная троичная строка" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BMinimalnayaTroichnayaStroka" cppPath="tasks/BMinimalnayaTroichnayaStroka.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="100210&#10;" output="001120&#10;" active="true" />
+      <test input="11222121&#10;" output="11112222&#10;" active="true" />
+      <test input="20&#10;" output="20&#10;" active="true" />
+      <test input="1210" output="1120" active="true" />
+      <test input="11111" output="11111" active="true" />
+      <test input="021" output="012" active="true" />
+      <test input="210" output="120" active="true" />
+      <test input="012" output="012" active="true" />
+      <test input="0101010" output="0000111" active="true" />
+      <test input="21012" output="11202" active="true" />
+      <test input="0210120" output="0112020" active="true" />
+      <test input="1" output="1" active="true" />
+      <test input="0102" output="0012" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

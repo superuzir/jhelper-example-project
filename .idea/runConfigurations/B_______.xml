@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Лунный новый год и заказ еды" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BLunniiNoviiGodIZakazEdi" cppPath="tasks/BLunniiNoviiGodIZakazEdi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="8 5&#10;8 6 2 1 4 5 7 5&#10;6 3 3 2 6 2 3 2&#10;2 8&#10;1 4&#10;4 7&#10;3 4&#10;6 10&#10;" output="22&#10;24&#10;14&#10;10&#10;39&#10;" active="true" />
+      <test input="6 6&#10;6 6 6 6 6 6&#10;6 66 666 6666 66666 666666&#10;1 6&#10;2 6&#10;3 6&#10;4 6&#10;5 6&#10;6 66&#10;" output="36&#10;396&#10;3996&#10;39996&#10;399996&#10;0&#10;" active="true" />
+      <test input="6 6&#10;6 6 6 6 6 6&#10;6 66 666 6666 66666 666666&#10;1 6&#10;2 13&#10;3 6&#10;4 11&#10;5 6&#10;6 6&#10;" output="36&#10;11058&#10;99996&#10;4333326&#10;0&#10;0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

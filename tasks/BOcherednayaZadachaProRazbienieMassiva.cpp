@@ -36,6 +36,7 @@ public:
 
 		ll sum = 0;
 		ll cnt = 0;
+		ll k1 = 0;
 		vll ans;
 
 		forr(v, vec)
@@ -46,10 +47,11 @@ public:
 				sum += v.val;
 			}
 
-			if(cnt == m && v.idx + 1 < n)
+			if(cnt == m && k1 < k - 1)
 			{
 				cnt = 0;
 				ans.pb(v.idx + 1);
+				k1++;
 			}
 		}
 
