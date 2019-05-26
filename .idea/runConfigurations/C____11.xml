@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Возрастание по модулю" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CVozrastaniePoModulyu" cppPath="tasks/CVozrastaniePoModulyu.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5 3&#10;0 0 0 1 2&#10;" output="0&#10;" active="true" />
+      <test input="5 7&#10;0 6 1 3 2&#10;" output="1&#10;" active="true" />
+      <test input="5 5&#10;0 2 4 0 0" output="3" active="true" />
+      <test input="5 5&#10;4 0 0 0 0" output="1" active="true" />
+      <test input="5 5&#10;0 0 0 0 4" output="0" active="true" />
+      <test input="5 5&#10;4 4 4 4 0" output="1" active="true" />
+      <test input="5 5&#10;1 1 1 1 0" output="1" active="true" />
+      <test input="5 7&#10;1 2 3 6 0" output="4" active="true" />
+      <test input="5 5&#10;1 2 3 4 0" output="4" active="true" />
+      <test input="1 4&#10;2" output="0" active="true" />
+      <test input="2 5&#10;1 2" output="0" active="true" />
+      <test input="2 5&#10;2 1" output="1" active="true" />
+      <test input="2 5&#10;4 1" output="1" active="true" />
+      <test input="2 5&#10;3 1" output="2" active="true" />
+      <test input="5 5&#10;2 2 0 2 2" output="2" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
