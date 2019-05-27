@@ -4,6 +4,29 @@
 
 class CVozrastaniePoModulyu
 {
+	ll minimize(ll a, ll b, ll k, ll m)
+	{
+		if(a == b)
+			return a;
+
+		if(b > a)
+		{
+			if(b - m + k >= a)
+				return a;
+			else
+				return b;
+		}
+
+		if(b < a)
+		{
+			if(b + k >= a)
+				return a;
+			else
+				return b + k;
+		}
+	}
+
+
 public:
 	void solve(std::istream& in, std::ostream& out)
 	{
@@ -11,58 +34,70 @@ public:
 		ll m = read_ll();
 		vll vec = read_vll(n);
 
-		if(n == 1)
+//		print minimize(2, 5, 0, 6);
+//		print minimize(2, 5, 1, 6);
+//		print minimize(2, 5, 2, 6);
+//		print minimize(2, 5, 3, 6);
+//		print minimize(2, 5, 4, 6);
+//		print minimize(2, 5, 5, 6);
+//		print 111;
+//		print minimize(5, 2, 0, 6);
+//		print minimize(5, 2, 1, 6);
+//		print minimize(5, 2, 2, 6);
+//		print minimize(5, 2, 3, 6);
+//		print minimize(5, 2, 4, 6);
+//		print minimize(5, 2, 5, 6);
+
+		if (n == 1)
 		{
 			print 0;
 			return;
 		}
-		
-		vll minr(n, vec[n - 1]);
-		
-		nfor1(i, n)
+
+//		forn(k, m)
+//		{
+//			if(check(n, m, vec, k))
+//			{
+//				print k;
+//				return;
+//			}
+//		}
+
+		ll low = 0;
+		ll high = m;
+		ll ans = max_ll;
+
+		while (low <= high)
 		{
-			minr[i] = min(vec[i], minr[i + 1]);
-		}
+			ll k = low + (high - low) / 2;
 
-		ll bonus = 0;
-
-		{
-			ll up = vec[0] - (minr[1] + bonus);
-			ll cyc = m - vec[0];
-
-			if(cyc < up)
+			if(check(n, m, vec, k))
 			{
-				bonus += cyc;
-				vec[0] = 0;
+				ans = min(ans, k);
+				high = k - 1;
 			}
-			
-			print 0, vec;
-		}
-		
-		forn1(i, n - 1)
-		{
-			if(vec[i] > minr[i + 1] + bonus)
+			else
 			{
-				ll up = vec[i] - (minr[i + 1] + bonus);
-				ll cyc = (vec[i - 1] + m - vec[i]) % m;
-				
-				print cyc, up;
-				
-				if(cyc < up)
-				{
-					bonus += cyc - bonus;
-					vec[i] = vec[i - 1];
-				}
+				low = k + 1;
 			}
-			
-			print i, vec;
 		}
-		
-		if(vec[n - 1] < vec[n - 2])
+
+		print ans;
+	}
+
+
+	bool check(ll n, ll m, const vll &vec, ll k)
+	{
+		ll prev = minimize(0, vec[0], k, m);
+
+		forn1(j, n)
 		{
-			bonus += max(0ll, vec[n - 2] - vec[n - 1] - bonus);
+			ll cur = minimize(prev, vec[j], k, m);
+			if (cur < prev)
+				return false;
+			prev = cur;
 		}
-		
-		print bonus;
+
+		return true;
 	}
 };
