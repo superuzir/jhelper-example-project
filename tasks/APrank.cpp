@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "../library/lib.hpp"
+#include "../library/itersame.h"
 
 class APrank
 {

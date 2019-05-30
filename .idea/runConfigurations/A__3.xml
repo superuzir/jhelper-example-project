@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Полёт" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="APolet" cppPath="tasks/APolet.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2&#10;12&#10;11 8&#10;7 5&#10;" output="10&#10;" active="true" />
+      <test input="3&#10;1&#10;1 4 1&#10;2 5 3&#10;" output="-1&#10;" active="true" />
+      <test input="6&#10;2&#10;4 6 3 3 5 6&#10;2 6 3 6 5 3&#10;" output="85.48&#10;" active="true" />
+      <test input="10&#10;10&#10;9 8 8 7 2 10 2 9 2 4&#10;3 10 6 2 6 6 5 9 4 5" output="3075.7142857143" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
