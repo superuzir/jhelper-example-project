@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "../library/lib.hpp"
 
 class BBornThisWay
@@ -27,21 +25,17 @@ public:
 		{
 			ll k2 = k - k1;
 			
-			ll amax = a[k1] + ta;
+			auto bit = lower_bound(all(b), a[k1] + ta);
 			
-			auto bit = lower_bound(all(b), amax);
-			
-			if(bit == b.end())
+			if(b.end() - bit <= k2)
 			{
 				print -1;
 				return;
 			}
 			
-			ans = max(ans, *(bit + k2));
-			
-//			print k1, k2, ":", amax, ans;
+			ans = max(ans, *(bit + k2) + tb);
 		}
 		
-		print ans + tb;
+		print ans;
 	}
 };
