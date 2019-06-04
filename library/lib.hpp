@@ -35,11 +35,12 @@ template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret
 template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
 template<typename T> void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
 
-#define read_vll(n) vin<ll>(n, in)
-#define read_vs(n)  vin<string>(n, in)
-#define read_s()    read<string>(in)
-#define read_ll()   read<ll>(in)
-#define read_pll()  read<pll>(in)
+#define read_vll(n)  vin<ll>(n, in)
+#define read_vpll(n) vin<pll>(n, in)
+#define read_vs(n)   vin<string>(n, in)
+#define read_s()     read<string>(in)
+#define read_ll()    read<ll>(in)
+#define read_pll()   read<pll>(in)
 
 #define max_ll std::numeric_limits<ll>::max()
 #define min_ll std::numeric_limits<ll>::min()
