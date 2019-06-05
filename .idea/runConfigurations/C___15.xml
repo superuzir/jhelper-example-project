@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Телефонные номера" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CTelefonnieNomera" cppPath="tasks/CTelefonnieNomera.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3 3&#10;abc&#10;" output="aca&#10;" active="true" />
+      <test input="3 2&#10;abc&#10;" output="ac&#10;" active="true" />
+      <test input="3 3&#10;ayy&#10;" output="yaa&#10;" active="true" />
+      <test input="2 3&#10;ba&#10;" output="baa&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
