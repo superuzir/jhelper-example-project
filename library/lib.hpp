@@ -8,6 +8,8 @@ using namespace std;
 #define forn1(i, n) for(ll i = 1; i < ll(n); ++i)
 #define nfor(i, n)  for(ll i = ll(n) - 1; i >= 0; --i)
 #define nfor1(i, n) for(ll i = ll(n) - 2; i >= 0; --i)
+#define forlr(i, l, r) for(ll i = l; i < ll(r); ++i)
+#define lrfor(i, l, r) for(ll i = ll(r) - 1; i >= l; --i)
 #define forr(elem, vec) for(auto & elem : vec)
 struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout(std::ostream& out) : space(false), out(out) {} ~WhiteSpacedCout() { out << std::endl; }  WhiteSpacedCout & start() {return *this;} template <typename T> WhiteSpacedCout &operator , (const T &t) { if (space) out << ' '; else space = true; out << t; return *this; } };
 #define print WhiteSpacedCout(out).start(),
