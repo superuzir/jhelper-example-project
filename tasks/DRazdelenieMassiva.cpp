@@ -18,38 +18,40 @@ public:
 			dp[i] = dp[i + 1] + vec[i];
 		}
 
-		multiset<pll> set;
-
-		vector<multiset<pll>::iterator> its(n);
-
-		for(ll i = k; i < n; i++)
+		if(k == 1)
 		{
-			its[i] = set.insert({dp[i], i});
+			print dp[0];
+			return;
 		}
 
-		ll maxi = n;
+		vpll ps;
 
-		ll ans = 0;
-
-		nfor(i, k)
+		forn1(i, n)
 		{
-			its[i] = set.insert({dp[i], i});
-			
-			auto top = *set.rbegin();
-			
-			for(ll j = top.se; j < maxi; j++)
-			{
-				set.erase(its[j]);
-				ans += vec[j] * (i + 1);
-			}
-
-			maxi = top.se;
+			ps.pb({dp[i], i});
 		}
 
-		for(ll j = 0; j < maxi; j++)
+		sort(rall(ps), by(fi));
+
+		ps.resize(k - 1);
+
+		sort(rall(ps), by(se));
+
+//		print ps;
+//		print dp;
+
+		ll ans = ps[0].fi * k;
+
+//		print ans;
+
+		forn1(i, k - 1)
 		{
-			ans += vec[j];
+			ans += (ps[i].fi - ps[i - 1].fi) * (k - i);
 		}
+
+		ans += dp[0] - ps.back().fi;
+
+//		print ans, dp;
 
 		print ans;
 	}

@@ -25,6 +25,8 @@
       <test input="5 2&#10;1 0 0 0 0" output="1" active="true" />
       <test input="5 2&#10;1 0 0 -1 0" output="0" active="true" />
       <test input="5 2&#10;0 0 0 0 -1" output="-2" active="true" />
+      <test input="5 3&#10;-1 -5 5 -3 6&#10;" output="16" active="true" />
+      <test input="5 3&#10;1 -2 3 -4 5" output="12" active="true" />
     </tests>
     <method v="2" />
   </configuration>
