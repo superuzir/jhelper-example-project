@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Красивые строфы" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CKrasivieStrofi" cppPath="tasks/CKrasivieStrofi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="14&#10;wow&#10;this&#10;is&#10;the&#10;first&#10;mcdics&#10;codeforces&#10;round&#10;hooray&#10;i&#10;am&#10;proud&#10;about&#10;that&#10;" output="3&#10;about proud&#10;hooray round&#10;wow first&#10;this is&#10;i that&#10;mcdics am&#10;" active="true" />
+      <test input="7&#10;arsijo&#10;suggested&#10;the&#10;idea&#10;for&#10;this&#10;problem&#10;" output="0&#10;" active="true" />
+      <test input="4&#10;same&#10;same&#10;same&#10;differ&#10;" output="1&#10;same differ&#10;same same&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
