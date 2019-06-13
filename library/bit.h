@@ -13,3 +13,8 @@ static ll prevPowerOf2(ll n)
 			return i;
 	return 0;
 }
+
+static ll popcnt(ll n)
+{
+	return __builtin_popcountll(n);
+}
