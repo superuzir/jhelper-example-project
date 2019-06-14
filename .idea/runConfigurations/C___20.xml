@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Преобразование последовательности" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CPreobrazovaniePosledovatelnosti" cppPath="tasks/CPreobrazovaniePosledovatelnosti.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;" output="1 1 3 &#10;" active="true" />
+      <test input="2&#10;" output="1 2 &#10;" active="true" />
+      <test input="1&#10;" output="1 &#10;" active="true" />
+      <test input="4" output="1 1 2 4" active="true" />
+      <test input="5" output="1 1 1 2 4" active="true" />
+      <test input="16" output="1 1 1 1 1 1 1 1 2 2 2 2 4 4 8 16" active="true" />
+      <test input="6" output="1 1 1 2 2 6" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
