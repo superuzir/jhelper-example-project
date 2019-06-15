@@ -22,7 +22,10 @@ struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout
 
 template<typename T1, typename T2> std::ostream &operator<<(std::ostream &s, const std::pair<T1,T2> &x){ s << "pair(" << x.first << " ," << x.second << ')'; return s; }
 template<typename T> std::ostream &operator<<(std::ostream &s, const std::vector<T> &x){ if(x.empty()){ s << "vector(empty)"; return s;} s << "vector("; for(size_t i = 0; i < x.size() - 1; i++){ s << x[i] << ", "; } s << x[x.size() - 1] << ')'; return s; }
-template<typename T> std::ostream &operator<<(std::ostream &s, const std::multiset<T> &x){ if(x.empty()){ s << "multiset(empty)"; return s;} s << "multiset "; forr(v, x){ s << v << " "; } return s; }
+template<typename V>             std::ostream &operator<<(std::ostream &s, const std::set<V> &x)        { if(x.empty()){ s << "set(empty)";      return s;} s << "set(";      for(auto it = x.begin(); it != x.end();){ auto & v = *it; s << v; if(++it != x.end()) s << ", "; else s << ")"; } return s; }
+template<typename V>             std::ostream &operator<<(std::ostream &s, const std::multiset<V> &x)   { if(x.empty()){ s << "multiset(empty)"; return s;} s << "multiset("; for(auto it = x.begin(); it != x.end();){ auto & v = *it; s << v; if(++it != x.end()) s << ", "; else s << ")"; } return s; }
+template<typename K, typename V> std::ostream &operator<<(std::ostream &s, const std::map<K, V> &x)     { if(x.empty()){ s << "map(empty)";      return s;} s << "map(";      for(auto it = x.begin(); it != x.end();){ auto & v = *it; s << v.fi << "=" << v.se; if(++it != x.end()) s << ", "; else s << ")"; } return s; }
+template<typename K, typename V> std::ostream &operator<<(std::ostream &s, const std::multimap<K, V> &x){ if(x.empty()){ s << "multimap(empty)"; return s;} s << "multimap("; for(auto it = x.begin(); it != x.end();){ auto & v = *it; s << v.fi << "=" << v.se; if(++it != x.end()) s << ", "; else s << ")"; } return s; }
 template<typename T1, typename T2> std::istream & operator >> (std::istream &s, std::pair<T1,T2> & pair){ s >> pair.fi >> pair.se; return s;  }
 
 typedef long long ll;
