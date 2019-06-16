@@ -3,13 +3,6 @@
     <tests>
       <test input="7&#10;abcabca&#10;" output="5&#10;" active="true" />
       <test input="8&#10;abcdefgh&#10;" output="8&#10;" active="true" />
-      <test input="2&#10;aa" output="2" active="true" />
-      <test input="4&#10;aaaa" output="3" active="true" />
-      <test input="1&#10;a" output="1" active="true" />
-      <test input="4&#10;abab" output="3" active="true" />
-      <test input="4&#10;aabc" output="4" active="true" />
-      <test input="4&#10;baab" output="4" active="true" />
-      <test input="6&#10;abcdab" output="6" active="true" />
     </tests>
     <method v="2" />
   </configuration>
