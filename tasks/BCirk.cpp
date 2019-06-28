@@ -9,59 +9,41 @@ public:
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
-		auto c = read_s();
-		auto a = read_s();
+		auto sc = read_s();
+		auto sa = read_s();
 
-		ll ccnt = count(all(c), '1');
-
-		ll c0 = 0;
-		ll c1 = 0;
-		ll c2 = 0;
-
-		set<ll> team1;
+		ll na = 0;
+		ll nb = 0;
+		ll nc = 0;
+		ll nd = 0;
 
 		forn(i, n)
 		{
-			team1.insert(i + 1);
-
-			if(c[i] == '0' && a[i] == '0') c0++;
-			if(c[i] == '0' && a[i] == '1') c1++;
-			if(c[i] == '1' && a[i] == '0') c1++;
-			if(c[i] == '1' && a[i] == '1') c2++;
+			if(sc[i] == '1' && sa[i] == '1') na++;
+			if(sc[i] == '1' && sa[i] == '0') nb++;
+			if(sc[i] == '0' && sa[i] == '1') nc++;
+			if(sc[i] == '0' && sa[i] == '0') nd++;
 		}
 
-		forn(i, c1 + 1)
+		forn(a, na + 1)
+		forn(b, nb + 1)
 		{
-			ll d = ccnt - i;
+			ll c = na + nc - 2 * a - b;
+			ll d = n / 2 - a - b - c;
 
-			if(d % 2 || d < 0)
-				continue;
-
-			ll c2req = d / 2;
-
-			if(c2req <= c2);
+			if(c >= 0 && d >= 0 && c <= nc && d <= nd)
 			{
-				ll zerreq = n/2 - i - c2req;
-				if(zerreq <= c0)
+				forn(i, n)
 				{
-//					print ccnt;
-//					print zerreq, i, c2req;
-
-					forn(j, n)
-					{
-						if(c[j] == '0' && a[j] == '0') { if(zerreq) { zerreq--; team1.erase(j + 1); } }
-						if(c[j] == '0' && a[j] == '1') { if(i) { i--; team1.erase(j + 1); } }
-						if(c[j] == '1' && a[j] == '0') { if(i) { i--; team1.erase(j + 1); } }
-						if(c[j] == '1' && a[j] == '1') { if(c2req) { c2req--; team1.erase(j + 1); } }
-					}
-
-					forr(t, team1)
-					{
-						out << t << " ";
-					}
-
-					return;
+					if(sc[i] == '1' && sa[i] == '1') { if(a){ a--; out << i + 1 << " "; } }
+					if(sc[i] == '1' && sa[i] == '0') { if(b){ b--; out << i + 1 << " "; } }
+					if(sc[i] == '0' && sa[i] == '1') { if(c){ c--; out << i + 1 << " "; } }
+					if(sc[i] == '0' && sa[i] == '0') { if(d){ d--; out << i + 1 << " "; } }
 				}
+
+				out << endl;
+
+				return;
 			}
 		}
 
