@@ -37,10 +37,12 @@ typedef vector<vll> vvll;
 typedef vector<pll> vpll;
 
 template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
+template<typename T> static vector<pair<T, ll>> vini(ll n, std::istream& in){ vector<pair<T, ll>> ret; forn(i, n){ T val; in >> val; ret.pb({val, i}); } return ret; }
 template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
 template<typename T> void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
 
 #define read_vll(n)  vin<ll>(n, in)
+#define read_vlli(n) vini<ll>(n, in)
 #define read_vpll(n) vin<pll>(n, in)
 #define read_vs(n)   vin<string>(n, in)
 #define read_s()     read<string>(in)
