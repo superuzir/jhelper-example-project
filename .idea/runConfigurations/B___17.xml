@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Магазин букв" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BMagazinBukv" cppPath="tasks/BMagazinBukv.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="9&#10;arrayhead&#10;5&#10;arya&#10;harry&#10;ray&#10;r&#10;areahydra&#10;" output="5&#10;6&#10;5&#10;2&#10;9&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
