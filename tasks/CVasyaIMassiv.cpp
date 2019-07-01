@@ -27,6 +27,18 @@ public:
 			else
 				uns.pb({l, r});
 		}
+		
+		if(srt.empty())
+		{
+			vll ans;
+			nfor(i, n)
+			{
+				ans.pb(i + 1);
+			}
+			print "YES";
+			answer(ans, out);
+			return;
+		}
 
 		sort(all(srt));
 
