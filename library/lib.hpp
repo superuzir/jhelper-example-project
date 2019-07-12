@@ -19,6 +19,7 @@ struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout
 #define eq(x) [](const auto& a, const auto& b) { return a.x == b.x; } // C++14
 #define fi first
 #define se second
+#define divceil(x, y) (((x) + (y) - 1) / (y))
 
 template<typename T1, typename T2> std::ostream &operator<<(std::ostream &s, const std::pair<T1,T2> &x){ s << "pair(" << x.first << " ," << x.second << ')'; return s; }
 template<typename T> std::ostream &operator<<(std::ostream &s, const std::vector<T> &x){ if(x.empty()){ s << "vector(empty)"; return s;} s << "vector("; for(size_t i = 0; i < x.size() - 1; i++){ s << x[i] << ", "; } s << x[x.size() - 1] << ')'; return s; }
