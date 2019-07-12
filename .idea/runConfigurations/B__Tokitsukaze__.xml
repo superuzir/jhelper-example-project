@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Tokitsukaze и маджонг" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BTokitsukazeIMadzhong" cppPath="tasks/BTokitsukazeIMadzhong.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="1s 2s 3s&#10;" output="0&#10;" active="true" />
+      <test input="9m 9m 9m&#10;" output="0&#10;" active="true" />
+      <test input="3p 9m 2p&#10;" output="1&#10;" active="true" />
+      <test input="3p 3p 2s" output="1" active="true" />
+      <test input="3p 3p 4s" output="1" active="true" />
+      <test input="3p 3p 4p" output="1" active="true" />
+      <test input="2s 3s 4s" output="0" active="true" />
+      <test input="1p 3p 5p" output="1" active="true" />
+      <test input="1p 3s 5d" output="2" active="true" />
+      <test input="1p 3p 5d" output="1" active="true" />
+      <test input="1d 3p 5p" output="1" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
