@@ -32,6 +32,11 @@ public:
 			print 1;
 			return;
 		}
+		else if(vs[0][0] + 1 == vs[2][0] && vs[0][1] == vs[2][1])
+		{
+			print 1;
+			return;
+		}
 
 		if(vs[0][0] + 2 == vs[1][0] && vs[0][1] == vs[1][1])
 		{
@@ -39,6 +44,11 @@ public:
 			return;
 		}
 		else if(vs[1][0] + 2 == vs[2][0] && vs[1][1] == vs[2][1])
+		{
+			print 1;
+			return;
+		}
+		else if(vs[0][0] + 2 == vs[2][0] && vs[0][1] == vs[2][1])
 		{
 			print 1;
 			return;

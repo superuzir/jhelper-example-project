@@ -8,6 +8,7 @@
       <test input="4&#10;1 1 3 3" output="cslnb" active="true" />
       <test input="5&#10;1 1 5 5 5" output="cslnb" active="true" />
       <test input="5&#10;1 5 5 5 5" output="cslnb" active="true" />
+      <test input="5&#10;2 3 4 5 5" output="cslnb" active="true" />
     </tests>
     <method v="2" />
   </configuration>

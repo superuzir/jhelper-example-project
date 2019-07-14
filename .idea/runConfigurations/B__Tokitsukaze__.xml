@@ -12,6 +12,7 @@
       <test input="1p 3s 5d" output="2" active="true" />
       <test input="1p 3p 5d" output="1" active="true" />
       <test input="1d 3p 5p" output="1" active="true" />
+      <test input="1s 2p 3s" output="1" active="true" />
     </tests>
     <method v="2" />
   </configuration>

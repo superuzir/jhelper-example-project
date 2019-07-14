@@ -16,10 +16,14 @@ public:
 
 		ll cnt2 = 0;
 		ll cnt3 = 0;
+		ll pos2 = 0;
 
 		itersameall(vec, {
 			if(e - b == 2)
+			{
 				cnt2++;
+				pos2 = b - vec.begin();
+			}
 			else if(e - b > 2)
 				cnt3++;
 		});
@@ -28,6 +32,15 @@ public:
 		{
 			print "cslnb";
 			return;
+		}
+		
+		if(cnt2 == 1)
+		{
+			if(pos2 > 0 && vec[pos2 - 1] == vec[pos2] - 1)
+			{
+				print "cslnb";
+				return;
+			}
 		}
 		
 		ll steps = 0;

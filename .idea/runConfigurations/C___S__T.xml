@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. От S к T" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="COtSKT" cppPath="tasks/COtSKT.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="1&#10;ab&#10;acxb&#10;cax&#10;" output="YES&#10;" active="true" />
+      <test input="1&#10;a&#10;aaaa&#10;aaabbcc" output="YES" active="true" />
+      <test input="1&#10;a&#10;aaaa&#10;aabbcc" output="NO" active="true" />
+      <test input="1&#10;ab&#10;baaa&#10;aaaaa" output="NO" active="true" />
+      <test input="1&#10;ab&#10;abcd&#10;cd" output="YES" active="true" />
+      <test input="1&#10;bc&#10;abcd&#10;ad" output="YES" active="true" />
+      <test input="1&#10;cd&#10;abcd&#10;ab" output="YES" active="true" />
+      <test input="1&#10;abcd&#10;acbd&#10;abcd" output="NO" active="true" />
+      <test input="1&#10;acb&#10;acacb&#10;ac" output="YES" active="true" />
+      <test input="1&#10;aa&#10;acba&#10;z" output="NO" active="true" />
+      <test input="1&#10;aa&#10;acba&#10;bc" output="YES" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
