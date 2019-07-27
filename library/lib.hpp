@@ -11,8 +11,8 @@ using namespace std;
 #define forlr(i, l, r) for(ll i = l; i < ll(r); ++i)
 #define lrfor(i, l, r) for(ll i = ll(r) - 1; i >= l; --i)
 #define forr(elem, vec) for(auto & elem : vec)
-struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout(std::ostream& out) : space(false), out(out) {} ~WhiteSpacedCout() { out << std::endl; }  WhiteSpacedCout & start() {return *this;} template <typename T> WhiteSpacedCout &operator , (const T &t) { if (space) out << ' '; else space = true; out << t; return *this; } };
 #define print WhiteSpacedCout(out).start(),
+#define dbg(...) pr_dbg(out, #__VA_ARGS__, __VA_ARGS__);
 #define all(c) c.begin(), c.end()
 #define rall(c) c.rbegin(), c.rend()
 #define by(x) [](const auto& a, const auto& b) { return a.x < b.x; } // C++14
@@ -29,6 +29,11 @@ template<typename K, typename V> std::ostream &operator<<(std::ostream &s, const
 template<typename K, typename V> std::ostream &operator<<(std::ostream &s, const std::multimap<K, V> &x){ if(x.empty()){ s << "multimap(empty)"; return s;} s << "multimap("; for(auto it = x.begin(); it != x.end();){ auto & v = *it; s << v.fi << "=" << v.se; if(++it != x.end()) s << ", "; else s << ")"; } return s; }
 template<typename T1, typename T2> std::istream & operator >> (std::istream &s, std::pair<T1,T2> & pair){ s >> pair.fi >> pair.se; return s;  }
 
+struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout(std::ostream& out) : space(false), out(out) {} ~WhiteSpacedCout() { out << std::endl; }  WhiteSpacedCout & start() {return *this;} template <typename T> WhiteSpacedCout &operator , (const T &t) { if (space) out << ' '; else space = true; out << t; return *this; } };
+
+template<typename T> static void pr_dbg(std::ostream &s, const string& name, T t) { s << name << ": " << t << endl; }
+template<typename T, typename ... Types> static void pr_dbg(std::ostream &s, const string& names, T t, Types ... rest) { auto comma_pos = names.find(','); s << names.substr(0, comma_pos) << ": " << t << ", "; pr_dbg(s, string(names, names.find_first_not_of(" \t\n", comma_pos + 1)), rest ...); }
+
 typedef long long ll;
 typedef pair<int,int> pii;
 typedef pair<ll,ll> pll;
@@ -40,7 +45,7 @@ typedef vector<pll> vpll;
 template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
 template<typename T> static vector<pair<T, ll>> vini(ll n, std::istream& in){ vector<pair<T, ll>> ret; forn(i, n){ T val; in >> val; ret.pb({val, i}); } return ret; }
 template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
-template<typename T> void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
+template<typename T> static void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
 
 #define read_vll(n)  vin<ll>(n, in)
 #define read_vlli(n) vini<ll>(n, in)
