@@ -3,6 +3,8 @@
 using namespace std;
 
 #define all(c) c.begin(), c.end()
+#define soa(c) sort(all(c))
+#define sua(c) accumulate(all(c), 0ll)
 #define pb push_back
 #define forn(i, n)  for(ll i = 0; i < ll(n); ++i)
 #define forn1(i, n) for(ll i = 1; i < ll(n); ++i)
@@ -47,13 +49,14 @@ template<typename T> static vector<pair<T, ll>> vini(ll n, std::istream& in){ ve
 template<typename T> static T read(std::istream& in){ T val; in >> val; return val; }
 template<typename T> static void answer(const T & cont, std::ostream & out){ for(auto & v : cont){ out << v << ' '; }; out << '\n'; }
 
-#define read_vll(n)  vin<ll>(n, in)
-#define read_vlli(n) vini<ll>(n, in)
-#define read_vpll(n) vin<pll>(n, in)
-#define read_vs(n)   vin<string>(n, in)
-#define read_s()     read<string>(in)
-#define read_ll()    read<ll>(in)
-#define read_pll()   read<pll>(in)
+#define read_vll(n)   vin<ll>(n, in)
+#define read_vlli(n)  vini<ll>(n, in)
+#define read_vpll(n)  vin<pll>(n, in)
+#define read_vplli(n) vini<pll>(n, in)
+#define read_vs(n)    vin<string>(n, in)
+#define read_s()      read<string>(in)
+#define read_ll()     read<ll>(in)
+#define read_pll()    read<pll>(in)
 
 #define max_ll std::numeric_limits<ll>::max()
 #define min_ll std::numeric_limits<ll>::min()
