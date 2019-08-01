@@ -43,6 +43,7 @@ typedef vector<string> vs;
 typedef vector<ll> vll;
 typedef vector<vll> vvll;
 typedef vector<pll> vpll;
+typedef vector<vll> Graph;
 
 template<typename T> static vector<T> vin(ll n, std::istream& in){ vector<T> ret; forn(i, n){ T val; in >> val; ret.pb(val); } return ret; }
 template<typename T> static vector<pair<T, ll>> vini(ll n, std::istream& in){ vector<pair<T, ll>> ret; forn(i, n){ T val; in >> val; ret.pb({val, i}); } return ret; }
