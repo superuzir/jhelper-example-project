@@ -41,6 +41,7 @@ typedef pair<int,int> pii;
 typedef pair<ll,ll> pll;
 typedef vector<string> vs;
 typedef vector<ll> vll;
+typedef vector<bool> vb;
 typedef vector<vll> vvll;
 typedef vector<pll> vpll;
 typedef vector<vll> Graph;
