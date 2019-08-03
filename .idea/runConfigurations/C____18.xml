@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Префиксы и суффиксы" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CPrefiksiISuffiksi" cppPath="tasks/CPrefiksiISuffiksi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;ba&#10;a&#10;abab&#10;a&#10;aba&#10;baba&#10;ab&#10;aba&#10;" output="SPPSPSPS&#10;" active="true" />
+      <test input="3&#10;a&#10;aa&#10;aa&#10;a&#10;" output="PPSS&#10;" active="true" />
+      <test input="2&#10;a&#10;c&#10;" output="PS&#10;" active="true" />
+      <test input="9&#10;a&#10;ab&#10;aba&#10;abab&#10;ababa&#10;ababab&#10;abababa&#10;abababab&#10;babababa&#10;abababa&#10;bababa&#10;ababa&#10;baba&#10;aba&#10;ba&#10;a" output="PPPPPPPPSSSSSSSS" active="true" />
+      <test input="3&#10;a&#10;a&#10;ab&#10;ba" output="PSPS" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
