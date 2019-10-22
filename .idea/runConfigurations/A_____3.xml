@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Очередное разделение на команды" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AOcherednoeRazdelenieNaKomandi" cppPath="tasks/AOcherednoeRazdelenieNaKomandi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;4&#10;2 10 1 20&#10;2&#10;3 6&#10;5&#10;2 3 4 99 100&#10;1&#10;42&#10;" output="2&#10;1&#10;2&#10;1&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
