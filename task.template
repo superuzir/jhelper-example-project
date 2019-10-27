@@ -8,6 +8,6 @@ public:
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
-		auto vec = read_vll(n);
+		auto v = read_vll(n);
 	}
 };
