@@ -14,19 +14,27 @@ public:
 			ll n = read_ll();
 			ll k = read_ll();
 
-			if(k > n)
+			if(k == n)
 			{
-				if((n + 1) % 3 == 1)
-					print "Bob";
-				else
-					print "Alice";
+				print "Alice";
 			}
 			else
 			{
-				if(k == n || (k % 3 == 0))
-					print "Alice";
-				else
-					print "Bob";
+				if(k % 3){
+					if((n + 1) % 3 == 1)
+						print "Bob";
+					else
+						print "Alice";
+				} else {
+					ll ost = (n + 1) % (k + 1);
+					
+					if(ost == 0)
+						print "Alice";
+					else if(ost % 3 == 1)
+						print "Bob";
+					else
+						print "Alice";
+				}
 			}
 		}
 	}

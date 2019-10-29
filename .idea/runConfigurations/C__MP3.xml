@@ -4,36 +4,16 @@
       <test input="6 1&#10;2 1 2 3 4 3&#10;" output="2&#10;" active="true" />
       <test input="6 2&#10;2 1 2 3 4 3&#10;" output="0&#10;" active="true" />
       <test input="6 1&#10;1 1 2 2 3 3&#10;" output="2&#10;" active="true" />
-      <test input="6 2&#10;2 1 2 3 4 5" output="1" active="true" />
-      <test input="8 1&#10;1 1 1 1 1 1 1 1" output="0" active="true" />
-      <test input="8 0&#10;1 1 1 1 1 1 1 1" output="0" active="true" />
-      <test input="8 0&#10;1 1 1 1 1 2 1 1" output="1" active="true" />
-      <test input="9 1&#10;1 1 1 1 1 1 1 1 1" output="0" active="true" />
-      <test input="9 1&#10;1 1 1 1 1 1 1 1 2" output="1" active="true" />
-      <test input="9 1&#10;1 1 1 1 1 1 1 1 10" output="1" active="true" />
-      <test input="8 2&#10;1 4 5 1 1 1 1 1" output="1" active="true" />
-      <test input="8 0&#10;1 2 3 4 5 6 7 8" output="7" active="true" />
-      <test input="8 0&#10;1 1 1 1 1 2 2 2" output="3" active="true" />
-      <test input="8 0&#10;3 3 3 1 1 2 2 2" output="5" active="true" />
-      <test input="8 0&#10;1 1 1 2 2 2 2 2" output="3" active="true" />
-      <test input="9 2&#10;1 4 5 1 1 1 1 1 1" output="2" active="true" />
-      <test input="6 1&#10;1 2 2 3 3 3" output="1" active="true" />
-      <test input="6 1&#10;1 1 1 2 2 3" output="1" active="true" />
-      <test input="6 1&#10;1 1 1 2 3 3" output="2" active="true" />
-      <test input="8 3&#10;1 4 5 1 1 1 1 1" output="0" active="true" />
-      <test input="8 3000000000&#10;1 4 5 1 1 1 1 1" output="0" active="true" />
-      <test input="6 1&#10;6 8 15 4 4 8" output="4" active="true" />
+      <test input="6 0&#10;7 7 7 7 7 7" output="0" active="true" />
+      <test input="6 0&#10;7 7 7 8 7 7" output="1" active="true" />
+      <test input="4 0&#10;1 2 3 4" output="3" active="true" />
       <test input="4 1&#10;1 2 3 4" output="0" active="true" />
-      <test input="5 1&#10;1 2 3 4 5" output="3" active="true" />
-      <test input="1 1&#10;1" output="0" active="true" />
-      <test input="4 1&#10;1 2 3 5" output="1" active="true" />
-      <test input="2 1&#10;1 2 3 8" output="0" active="true" />
-      <test input="2 1&#10;1 16" output="0" active="true" />
-      <test input="2 1&#10;0 16" output="1" active="true" />
-      <test input="2 1&#10;0 100" output="1" active="true" />
-      <test input="9 3&#10;1 4 5 1 1 1 1 1 1" output="1" active="true" />
-      <test input="1 1&#10;100055000" output="0" active="true" />
-      <test input="1 0&#10;100055000" output="0" active="true" />
+      <test input="4 2&#10;1 2 3 4" output="0" active="true" />
+      <test input="8 1&#10;1 2 3 4 5 6 7 8" output="6" active="true" />
+      <test input="4 1&#10;0 2 3 4" output="0" active="true" />
+      <test input="6 1&#10;7 7 7 8 7 7" output="0" active="true" />
+      <test input="6 1&#10;0 0 0 7 7 7" output="0" active="true" />
+      <test input="50 20&#10;&#10;592183311 362557946 154127088 616872926 395353745 675069471 509655682 79915471 356656666 937992998 304422065 724106263 472338455 792258113 796069631 663370025 201799298 566151622 722278085 508905399 703159587 690854023 925377265 11010958 69791159 990158269 535460930 167415727 999216963 237203826 693974848 530462137 555061429 744123832 887168514 479773974 575345653 282142246 899762676 446274594 338501746 168668673 408947684 226311538 645441958 258972430 216333311 338561078 123733185 539429791" output="42" active="true" />
     </tests>
     <method v="2" />
   </configuration>
