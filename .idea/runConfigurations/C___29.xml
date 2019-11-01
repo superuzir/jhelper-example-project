@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Аппарат Констанции" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CApparatKonstancii" cppPath="tasks/CApparatKonstancii.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="ouuokarinn&#10;" output="4&#10;" active="true" />
+      <test input="banana&#10;" output="1&#10;" active="true" />
+      <test input="nnn&#10;" output="3&#10;" active="true" />
+      <test input="amanda&#10;" output="0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

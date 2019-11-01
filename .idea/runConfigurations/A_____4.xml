@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Старая добрая раскраска чисел" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AStarayaDobrayaRaskraskaChisel" cppPath="tasks/AStarayaDobrayaRaskraskaChisel.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;10 10&#10;1 10&#10;6 9&#10;7 3&#10;" output="Infinite&#10;Finite&#10;Infinite&#10;Finite&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

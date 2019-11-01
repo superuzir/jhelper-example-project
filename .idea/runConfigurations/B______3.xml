@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Камень-ножницы-бумага с ограничениями" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BKamenNozhniciBumagaSOgranicheniyami" cppPath="tasks/BKamenNozhniciBumagaSOgranicheniyami.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2&#10;3&#10;1 1 1&#10;RPS&#10;3&#10;3 0 0&#10;RPS&#10;" output="YES&#10;PSR&#10;NO&#10;" active="true" />
+      <test input="1&#10;8&#10;3 2 3&#10;RRRRRPPS" output="YES&#10;PPSRRSSR" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
