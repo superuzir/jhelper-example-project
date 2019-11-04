@@ -11,7 +11,7 @@ using namespace std;
 #define nfor(i, n)  for(ll i = ll(n) - 1; i >= 0; --i)
 #define nfor1(i, n) for(ll i = ll(n) - 2; i >= 0; --i)
 #define forlr(i, l, r) for(ll i = l; i < ll(r); ++i)
-#define lrfor(i, l, r) for(ll i = ll(r) - 1; i >= l; --i)
+#define forrl(i, l, r) for(ll i = ll(r) - 1; i >= l; --i)
 #define forr(elem, vec) for(auto & elem : vec)
 #define print WhiteSpacedCout(out).start(),
 #define dbg(...) pr_dbg(out, #__VA_ARGS__, __VA_ARGS__);
