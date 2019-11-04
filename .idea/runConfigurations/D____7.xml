@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D. Минимизация бинарной строки" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="DMinimizaciyaBinarnoiStroki" cppPath="tasks/DMinimizaciyaBinarnoiStroki.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;8 5&#10;11011010&#10;7 9&#10;1111100&#10;7 11&#10;1111100&#10;" output="01011110&#10;0101111&#10;0011111&#10;" active="true" />
+      <test input="1&#10;6 0&#10;110111" output="110111" active="true" />
+      <test input="" output="" active="true" />
+      <test input="1&#10;6 10&#10;111111" output="111111" active="true" />
+      <test input="1&#10;6 10&#10;111101" output="011111" active="true" />
+      <test input="1&#10;6 10&#10;000000" output="000000" active="true" />
+      <test input="1&#10;6 10&#10;100000" output="000001" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

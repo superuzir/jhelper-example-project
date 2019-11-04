@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Оплата без сдачи" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AOplataBezSdachi" cppPath="tasks/AOplataBezSdachi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;1 2 3 4&#10;1 2 3 6&#10;5 2 6 27&#10;3 3 5 18&#10;" output="YES&#10;NO&#10;NO&#10;YES&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
