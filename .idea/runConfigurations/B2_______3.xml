@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B2. Обмен символов (усложнённая версия)" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="B2ObmenSimvolovUslozhnennayaVersiya" cppPath="tasks/B2ObmenSimvolovUslozhnennayaVersiya.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="4&#10;5&#10;souse&#10;houhe&#10;3&#10;cat&#10;dog&#10;2&#10;aa&#10;az&#10;3&#10;abc&#10;bca&#10;" output="Yes&#10;1&#10;1 4&#10;No&#10;No&#10;Yes&#10;3&#10;1 2&#10;3 1&#10;2 3&#10;" active="true" />
+      <test input="1&#10;5&#10;aaabb&#10;bbaaa" output="Yes&#10;2&#10;2 1&#10;5 4" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
