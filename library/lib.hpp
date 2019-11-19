@@ -31,7 +31,7 @@ template<typename K, typename V> std::ostream &operator<<(std::ostream &s, const
 template<typename K, typename V> std::ostream &operator<<(std::ostream &s, const std::multimap<K, V> &x){ if(x.empty()){ s << "multimap(empty)"; return s;} s << "multimap("; for(auto it = x.begin(); it != x.end();){ auto & v = *it; s << v.fi << "=" << v.se; if(++it != x.end()) s << ", "; else s << ")"; } return s; }
 template<typename T1, typename T2> std::istream & operator >> (std::istream &s, std::pair<T1,T2> & pair){ s >> pair.fi >> pair.se; return s;  }
 
-struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout(std::ostream& out) : space(false), out(out) {} ~WhiteSpacedCout() { out << std::endl; }  WhiteSpacedCout & start() {return *this;} template <typename T> WhiteSpacedCout &operator , (const T &t) { if (space) out << ' '; else space = true; out << t; return *this; } };
+struct WhiteSpacedCout { bool space; std::ostream& out; explicit WhiteSpacedCout(std::ostream& out) : space(false), out(out) {} ~WhiteSpacedCout() { out << '\n'; }  WhiteSpacedCout & start() {return *this;} template <typename T> WhiteSpacedCout &operator , (const T &t) { if (space) out << ' '; else space = true; out << t; return *this; } };
 
 template<typename T> static void pr_dbg(std::ostream &s, const string& name, T t) { s << name << ": " << t << endl; }
 template<typename T, typename ... Types> static void pr_dbg(std::ostream &s, const string& names, T t, Types ... rest) { auto comma_pos = names.find(','); s << names.substr(0, comma_pos) << ": " << t << ", "; pr_dbg(s, string(names, names.find_first_not_of(" \t\n", comma_pos + 1)), rest ...); }
