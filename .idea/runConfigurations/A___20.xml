@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Изменение громкости" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AIzmenenieGromkosti" cppPath="tasks/AIzmenenieGromkosti.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;4 0&#10;5 14&#10;3 9&#10;" output="2&#10;3&#10;2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
