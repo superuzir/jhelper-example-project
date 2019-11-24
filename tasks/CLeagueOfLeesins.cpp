@@ -14,11 +14,6 @@ public:
 
 		vll fr(100001);
 
-		if(n == 3){
-			print read_ll(), read_ll(), read_ll();
-			return;
-		}
-
 		forn(i, n - 2){
 			ll v[] = { read_ll(), read_ll(), read_ll() };
 			sort(v, v + 3);
@@ -35,80 +30,64 @@ public:
 
 //		print fr;
 
-		auto st = find(all(fr), 1);
+		auto st11 = find(all(fr), 1);
+		auto st12 = find(st11 + 1, fr.end(), 1);
 
-		ll f = st - fr.begin();
-
-		*st = 0;
-
-		auto st2 = find(all(fr), 1);
-
-		ll l = st2 - fr.begin();
-
-		*st2 = 0;
+		auto st21 = find(all(fr), 2);
+		auto st22 = find(st21 + 1, fr.end(), 2);
 
 
-//		print m;
+		ll s11 = st11 - fr.begin();
+		ll s12 = st12 - fr.begin();
+		ll s21 = st21 - fr.begin();
+		ll s22 = st22 - fr.begin();
 
-		auto fnd = [&](pll p){
-			return m[p];
+		auto sorted = [](pll p){
+			if(p.fi > p.se)
+				swap(p.fi, p.se);
+
+			return p;
 		};
+		
+		if(!m.count(sorted({s11, s21})))
+			s21 = s22;
 
-//		dbg(fnd({2,3}));
-//		dbg(fnd({2,5}));
-//		dbg(fnd({3,5}));
-//		dbg(fnd({2,4}));
+//		dbg(s11, s21);
 
 		vll ans;
 
-		forr(kv, m)
-		{
-			if(find(all(kv.se), f) != kv.se.end()){
-//				dbg(f);
+		set<ll> was;
 
-				pll fp = kv.fi;
+		while(m.count(sorted({s11, s21}))){
 
-				while(true){
+			vll c = m[sorted({s11, s21})];
 
-//					print fp;
-//					print fnd(fp);
+//			dbg(c.size());
 
-					auto v = fnd(fp);
-
-					if(find(all(v), l) != v.end())
-					{
-						ans.pb(f);
-						ans.pb(fp.fi);
-						ans.pb(fp.se);
-						ans.pb(l);
-
-						answer(ans, out);
-						return;
-					}
-
-					if(v[0] == f)
-						v[0] = v[1];
-
-					ans.pb(f);
-
-					pll nfp = {fp.fi, v[0]};
-					f = fp.se;
-					if(fnd(nfp).size() != 2)
-					{
-						nfp = pll{fp.se, v[0]};
-						f = fp.fi;
-					}
-
-					fp = nfp;
-				};
+			if(was.count(c[0])){
+				if(c.size() == 1){
+					ans.pb(s11);
+					ans.pb(s21);
+					break;
+				} else {
+					c[0] = c[1];
+				}
 			}
+
+			was.insert(s11);
+			ans.pb(s11);
+
+
+			s11 = s21;
+			s21 = c[0];
+
+
+
+//			dbg(s11, s21);
 		}
 
+//		ans.pb(s21);
 
-
-
-
-
-
+		answer(ans, out);
 	}
 };

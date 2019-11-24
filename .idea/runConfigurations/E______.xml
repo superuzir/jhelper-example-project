@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="E. Два массива и сумма функций" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="EDvaMassivaISummaFunktsii" cppPath="tasks/EDvaMassivaISummaFunktsii.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;1 8 7 2 4&#10;9 7 2 9 3&#10;" output="646&#10;" active="true" />
+      <test input="1&#10;1000000&#10;1000000&#10;" output="757402647&#10;" active="true" />
+      <test input="2&#10;1 3&#10;4 2&#10;" output="20&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

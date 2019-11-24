@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D2. Удалите подстроку (сложная версия)" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="D2UdalitePodstrokuSlozhnayaVersiya" cppPath="tasks/D2UdalitePodstrokuSlozhnayaVersiya.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="bbaba&#10;bb&#10;" output="3&#10;" active="true" />
+      <test input="baaba&#10;ab&#10;" output="2&#10;" active="true" />
+      <test input="abcde&#10;abcde&#10;" output="0&#10;" active="true" />
+      <test input="asdfasdf&#10;fasd&#10;" output="3&#10;" active="true" />
+      <test input="accccb&#10;ab" output="4" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
