@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Красивая строка" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AKrasivayaStroka" cppPath="tasks/AKrasivayaStroka.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="11&#10;a???cb&#10;a??bbc&#10;a?b?c&#10;?&#10;??&#10;???&#10;????&#10;a???&#10;a????&#10;a?a&#10;a??a" output="acbacb&#10;-1&#10;acbac&#10;a&#10;ab&#10;acb&#10;abab&#10;abca&#10;ababa&#10;aba&#10;abca" active="true" />
+      <test input="3&#10;?&#10;?a&#10;??a" active="true" />
+      <test input="3&#10;a?a&#10;a??a&#10;a???a" active="true" />
+      <test input="3&#10;a?b&#10;a??b&#10;a???b" active="true" />
+      <test input="3&#10;b?a&#10;b??a&#10;b???a" active="true" />
+      <test input="5&#10;a?a?a&#10;a?a??a&#10;a??a?a&#10;a??a??a&#10;?a?a?" active="true" />
+      <test input="3&#10;?a?a&#10;a?a?&#10;?a?" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
