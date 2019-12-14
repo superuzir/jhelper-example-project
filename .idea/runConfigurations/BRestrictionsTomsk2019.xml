@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BRestrictionsTomsk2019" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BRestrictionsTomsk2019" cppPath="tasks/BRestrictionsTomsk2019.cpp" inputType="STANDARD" inputFile="input.txt" outputType="STANDARD" outputFile="output.txt" testType="SINGLE">
+    <tests>
+      <test input="HelloWorld&#10;2&#10;L 2&#10;O 3" output="HelloWord" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

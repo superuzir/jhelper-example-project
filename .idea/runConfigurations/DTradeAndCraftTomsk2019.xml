@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DTradeAndCraftTomsk2019" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="DTradeAndCraftTomsk2019" cppPath="tasks/DTradeAndCraftTomsk2019.cpp" inputType="STANDARD" inputFile="input.txt" outputType="STANDARD" outputFile="output.txt" testType="SINGLE">
+    <tests>
+      <test input="10&#10;3 1&#10;1 1" output="2" active="true" />
+      <test input="14&#10;3 1&#10;1 1" output="3" active="true" />
+      <test input="676&#10;&#10;4 17&#10;&#10;1 1&#10;" output="544" active="true" />
+      <test input="1000000000000000&#10;&#10;1 1000&#10;&#10;1 1&#10;" output="999000999000999" active="true" />
+      <test input="1000000000000000&#10;&#10;1 1000&#10;&#10;31 30&#10;" output="32226877215597" active="true" />
+      <test input="87900000000541&#10;&#10;962 146&#10;&#10;166 731&#10;" output="17641430845" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
