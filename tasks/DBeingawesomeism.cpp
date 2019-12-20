@@ -96,14 +96,51 @@ public:
 					rig++;
 				}
 			}
+			
+			bool line = false;
 
+			{
+				forn(i, r)
+				{
+					ll cnt = 0;
+					forn(j, c)
+					{
+						if(s[i][j] == 'A')
+							cnt ++;
+					}
+					if(cnt == c)
+					{
+						line = true;
+						break;
+					}
+				}
+			}
+
+			if(!line)
+			{
+				forn(j, c)
+				{
+					ll cnt = 0;
+					forn(i, r)
+					{
+						if(s[i][j] == 'A')
+							cnt ++;
+					}
+					if(cnt == r)
+					{
+						line = true;
+						break;
+					}
+				}
+			}
+			
 //			dbg(top, bot, lef, rig);
 //			dbg(toplef, botlef, toprig, botrig);
 
 			if(top == c || bot == c || lef == r || rig == r)
 			{
 				print 1;
-			} else if(toplef || botlef || toprig || botrig){
+			} else if(toplef || botlef || toprig || botrig || line){
 				print 2;
 			} else if(top || bot || lef || rig) {
 				print 3;

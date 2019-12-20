@@ -11,21 +11,30 @@ public:
 	{
 		ll n = read_ll();
 		ll p = read_ll();
-
-		forn1(i, 1e9) {
-			ll s = n - p * i;
-			
-			if(s < 1) {
+		
+		if(p == 0)
+		{
+			print popcnt(n);
+			return;
+		}
+		
+		ll ans = 0;
+		
+		while(1){
+			if(n < 0)
+			{
 				print -1;
 				return;
 			}
 			
-			if(i == popcnt(s) || 
-				(i >= popcnt(s) && s >= i))
+			if(ans >= popcnt(n) && ans <= n)
 			{
-				print i;
+				print ans;
 				return;
 			}
+			
+			ans++;
+			n -= p;
 		}
 	}
 };

@@ -6,7 +6,7 @@
       <test input="24 -1&#10;" output="4&#10;" active="true" />
       <test input="4 -7&#10;" output="2&#10;" active="true" />
       <test input="1 1&#10;" output="-1&#10;" active="true" />
-      <test input="9 4" output="-1" active="true" />
+      <test input="2 2" output="-1" active="true" />
     </tests>
     <method v="2" />
   </configuration>
