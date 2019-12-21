@@ -5,32 +5,29 @@
 class AIvanushkaDurachokITeoriyaVeroyatnostei
 {
 public:
-	ll getInt(ll n) const
+	static ll fib(ll n)
 	{
-		if(n == 1)
-			return 1;
+		vll l(n);
+		l[0] = 1;
+		l[1] = 2;
 
-		ll p[2] = {1, 2};
-
-		forlr(i, 2, n)
-		{
-			ll cur = (p[0] + p[1]) % MOD;
-			p[0] = p[1];
-			p[1] = cur;
+		forlr(i, 2, n){
+			l[i] = l[i - 2] + l[i - 1];
+			l[i] %= MOD;
 		}
-
-		return p[1];
+		
+		return l.back();
 	}
-
+	
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
 		ll m = read_ll();
-
-		ll ans = getInt(n) * 2 % MOD;
-
-		ans += getInt(m) * 2;
-		ans += MOD - 2;
+		
+		ll ans = 0;
+		
+		ans += 2 * fib(n) + MOD - 1;
+		ans += 2 * fib(m) + MOD - 1;
 		ans %= MOD;
 
 		print ans;

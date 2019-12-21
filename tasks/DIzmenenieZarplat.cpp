@@ -8,62 +8,58 @@ public:
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll q = read_ll();
-		forn(_, q)
-		{
+
+		forn(_, q){
 			ll n = read_ll();
 			ll s = read_ll();
 			auto vec = read_vpll(n);
 
-			ll l = 1;
-			ll r = 1e9 + 2.5;
+			ll l = 0;
+			ll r = s + 1;
 			ll ans = 0;
 
-			while(l < r - 1) {
-				ll m = (r + l) / 2;
+			while(l < r){
+				ll m = (l + r) / 2;
 
-				ll clo = 0;
-				ll chi = 0;
 				vpll cand;
 
-				ll total = 0;
+				ll lo = 0;
+				ll hi = 0;
+				ll zp = 0;
 
-				forr(a, vec){
-					if(a.fi > m) {
-						chi++;
-						total += a.fi;
+				forr(v, vec){
+					if(v.se < m){
+						lo++;
+						zp += v.fi;
+					} else if(v.fi > m){
+						hi++;
+						zp += v.fi;
+					} else {
+						cand.pb(v);
 					}
-					else if(a.se < m) {
-						clo++;
-						total += a.fi;
-					}
-					else cand.pb(a);
 				}
 
 				soa(cand);
 
-//				dbg(salmin, salmax, clo, chi, cand);
-
-
-				if(clo > n / 2) {
+				if(hi > n / 2){
+					l = m + 1;
+				} else if(lo > n / 2){
 					r = m;
-				} else if(chi > n / 2) {
-					l = m;
 				} else {
-					ll mcand = n / 2 - clo;
-
-					forn(i, mcand) {
-						total += cand[i].fi;
+					forr(c, cand){
+						if(lo < n / 2){
+							zp += c.fi;
+						} else {
+							zp += m;
+						}
+						lo++;
 					}
 
-					forlr(i, mcand, cand.size()){
-						total += m;
-					}
-
-					if(total <= s){
-						ans = max(m, ans);
-						l = m;
-					} else {
+					if(zp > s){
 						r = m;
+					} else {
+						l = m + 1;
+						ans = max(ans, m);
 					}
 				}
 			}

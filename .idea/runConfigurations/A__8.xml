@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Уравнение" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AUravnenie" cppPath="tasks/AUravnenie.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="1&#10;" output="9 8&#10;" active="true" />
+      <test input="512&#10;" output="4608 4096&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
