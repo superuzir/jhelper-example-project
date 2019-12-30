@@ -5,73 +5,96 @@
 class CPeriodicIntegerNumber
 {
 public:
-	string getString(string s) const
-	{
-		s.back()++;
-		nfor(i, s.size())
+	string inc(string f){
+
+		ll per = 0;
+
+		f.back()++;
+		if(f.back() > '9')
 		{
-			if(s[i] == '9' + 1){
-				s[i] = '0';
-				s[i - 1]++;
+			f.back() = '0';
+			per = 1;
+		}
+
+		nfor(i, f.size() - 1){
+			f[i] = f[i] + per;
+			if(f[i] > '9'){
+				f[i] = '0';
+				per = 1;
+			} else {
+				per = 0;
 			}
 		}
-		return s;
+
+		if(per)
+			f = "1" + f;
+
+		return f;
 	}
 
+	bool more(string a, string b){
+		ll n = a.size();
+
+		forn(i, n){
+			if(a[i] < b[i])
+				return false;
+
+			if(a[i] > b[i])
+				return true;
+		}
+
+		return false;
+	}
+
+	bool less(string a, string b){
+		ll n = a.size();
+
+		forn(i, n){
+			if(a[i] > b[i])
+				return false;
+
+			if(a[i] < b[i])
+				return true;
+		}
+
+		return false;
+	}
 	void solve(std::istream& in, std::ostream& out)
 	{
-		ll l = read_ll();
+		ll L = read_ll();
 		auto s = read_s();
 
-		if(s.size() == l)
-		{
-			if(all_of(all(s), [](char c){ return c == '9'; })) {
-				forn(_, s.size() / l + 1) {
-					out << '1';
-					forn(__, l - 1)
-						out << '0';
-				}
-				out << endl;
-			} else {
-				s = getString(s);
-				print s;
+		s = inc(s);
+		s = string((L - s.size() % L) % L, '0') + s;
+
+		if(s[0] == '0'){
+			string p = "1" + string(L - 1, '0');
+			string ans;
+			forn(i, s.size() / L){
+				ans += p;
 			}
-		} else if(s.size() % l){
-			forn(_, s.size() / l + 1) {
-				out << '1';
-				forn(__, l - 1)
-					out << '0';
-			}
-			out << endl;
-		} else if(all_of(all(s), [](char c){ return c == '9'; })) {
-			forn(_, s.size() / l + 1) {
-				out << '1';
-				forn(__, l - 1)
-					out << '0';
-			}
-			out << endl;
+
+			print ans;
 		} else {
-			auto fi = s.substr(0, l);
+			string p = s.substr(0, L);
 
-			ll willinc = 0;
-
-			forn1(i, s.size() / l){
-				auto sub = s.substr(i * l, l);
-				if(sub >= fi)
-					willinc++;
+			forn1(i, s.size() / L){
+				string p1 = s.substr(i * L, L);
+				if(less(p1, p)){
+					break;
+				}
+				if(more(p1, p)){
+					p = inc(p);
+					break;
+				}
 			}
 
-			if(willinc < s.size() / l - 1){
-				forn(i, s.size() / l)
-					out << fi;
-				out << endl;
-			} else {
-				auto incs = getString(fi);
-
-				forn(i, s.size() / l)
-					out << incs;
-				out << endl;
+			string ans;
+			forn(i, s.size() / L){
+				ans += p;
 			}
+
+			print ans;
 		}
 	}
 };

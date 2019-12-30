@@ -64,5 +64,3 @@ template<typename T> static void answer(const T & cont, std::ostream & out){ for
 #define min_ll std::numeric_limits<ll>::min()
 #define min3(a,b,c) std::min(std::min(a, b), c)
 #define max3(a,b,c) std::max(std::max(a, b), c)
-
-const ll MOD = 1000000007;
