@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Новый год и названия" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="ANoviiGodINazvaniya" cppPath="tasks/ANoviiGodINazvaniya.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="10 12&#10;sin im gye gap eul byeong jeong mu gi gyeong&#10;yu sul hae ja chuk in myo jin sa o mi sin&#10;14&#10;1&#10;2&#10;3&#10;4&#10;10&#10;11&#10;12&#10;13&#10;73&#10;2016&#10;2017&#10;2018&#10;2019&#10;2020&#10;" output="sinyu&#10;imsul&#10;gyehae&#10;gapja&#10;gyeongo&#10;sinmi&#10;imsin&#10;gyeyu&#10;gyeyu&#10;byeongsin&#10;jeongyu&#10;musul&#10;gihae&#10;gyeongja&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

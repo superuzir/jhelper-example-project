@@ -2,8 +2,6 @@
   <configuration default="false" name="B. Вам задана десятичная строка..." type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BVamZadanaDesyatichnayaStroka" cppPath="tasks/BVamZadanaDesyatichnayaStroka.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
     <tests>
       <test input="0840&#10;" output="-1 17 7 7 7 -1 2 17 2 7 &#10;17 17 7 5 5 5 2 7 2 7 &#10;7 7 7 4 3 7 1 7 2 5 &#10;7 5 4 7 3 3 2 5 2 3 &#10;7 5 3 3 7 7 1 7 2 7 &#10;-1 5 7 3 7 -1 2 9 2 7 &#10;2 2 1 2 1 2 2 2 0 1 &#10;17 7 7 5 7 9 2 17 2 3 &#10;2 2 2 2 2 2 0 2 2 2 &#10;7 7 5 3 7 7 1 3 2 7 &#10;" active="true" />
-      <test input="0659294725613608419263005157472379174227415717141388659240550061296764890425662807239326874869385672317046452849047888917394712579724837245506" active="true" />
-      <test input="065929472561360841926300" active="true" />
     </tests>
     <method v="2" />
   </configuration>

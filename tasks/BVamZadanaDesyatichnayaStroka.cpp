@@ -7,56 +7,92 @@ class BVamZadanaDesyatichnayaStroka
 public:
 	void solve(std::istream& in, std::ostream& out)
 	{
-		ll MX = (max_ll / 4);
+		auto s = read_s();
 
-		auto str = read_s();
+//		ll x = 3;
+//		ll y = 5;
 
-		vvvvll ds(10, vvvll(10, vvll(10, vll(10, MX))));
+		vvll ans(10, vll(10));
 
-		forn(from, 10)
-		forn(i, 10)
-		forn(j, 10)
-		forn(ci, 10)
-		forn(cj, 10)
+
+		forn(x, 10)
 		{
-			if(ci + cj == 0)
-				continue;
-			
-			ll num = from + i * ci + j * cj;
-			ll to = num % 10;
-
-			ds[i][j][from][to] = min(ds[i][j][from][to], ci + cj);
-		}
-
-
-		vvll ans(10, vll(10, -1));
-
-		forn(i, 10)
-			forn(j, 10)
+			forn(y, 10)
 			{
-				ll cst = 0;
-				bool ok = true;
+				vll d(10, max_ll);
 
-				forn1(s, str.size()){
-					ll from = str[s - 1] - '0';
-					ll to = str[s] - '0';
+				vb q(10);
 
-					ll cnt = ds[i][j][from][to];
+				q[x] = true;
+				q[y] = true;
 
-					if(cnt < MX){
-						cst += cnt - 1;
+				d[x] = 1;
+				d[y] = 1;
+
+				bool got_new = true;
+
+//				forn(_, 5)
+				while (got_new)
+				{
+					got_new = false;
+
+					vb q2(10);
+
+					forn(a, 10)
+					{
+						if(!q[a])
+							continue;
+
+						ll nx = (a + x) % 10;
+						ll ny = (a + y) % 10;
+
+//						dbg(got_new, nx, ny, d[nx], d[ny]);
+
+						if(d[nx] == max_ll || d[ny] == max_ll)
+							got_new = true;
+
+						d[nx] = min(d[nx], d[a] + 1);
+						d[ny] = min(d[ny], d[a] + 1);
+
+						q2[nx] = true;
+						q2[ny] = true;
+					}
+
+					q = q2;
+				}
+
+//				dbg(x, y, d);
+//				if(x == 0 && y == 1)
+//					dbg(x, y, d);
+
+				ll cnt = 0;
+
+				forn1(i, s.size()){
+					ll dif = (s[i] - s[i - 1] + 10) % 10;
+					ll c = d[dif];
+
+//					if(x == 0 && y == 1)
+//						dbg(i, dif, c);
+
+					if(c == max_ll){
+						cnt = -1;
+						break;
 					} else {
-						ok = false;
+						cnt += c - 1;
 					}
 				}
 
-				if(ok)
-					ans[i][j] = cst;
+				ans[x][y] = cnt;
 			}
+		}
 
 
-		forr(a, ans)
-			answer(a, out);
-
+		forn(x, 10)
+		{
+			forn(y, 10)
+			{
+				out << ans[x][y] << (y == 9 ? " \n" : " ");
+			}
+		}
 	}
 };

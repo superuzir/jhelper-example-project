@@ -6,7 +6,8 @@
 
 ll MOD2 = 998244353;
 
-ll fac(ll n){
+ll fac(ll n, long long int i)
+{
 	ll ans = 1;
 
 	forlr(i, 2, n + 1){
@@ -32,12 +33,12 @@ public:
 
 		sort(all(v));
 		itersame(all(v), [&](auto b, auto e){
-			c1 *= fac(e - b);
+			c1 *= fac(e - b, 0);
 			c1 %= MOD2;
 		}, eq(fi));
 
 		itersame(all(v), [&](auto b, auto e){
-			c12 *= fac(e - b);
+			c12 *= fac(e - b, 0);
 			c12 %= MOD2;
 		});
 
@@ -45,13 +46,13 @@ public:
 
 		sort(all(v), by(se));
 		itersame(all(v), [&](auto b, auto e){
-			c2 *= fac(e - b);
+			c2 *= fac(e - b, 0);
 			c2 %= MOD2;
 		}, eq(se));
 
 //		dbg(fac(n), c1, c2, c12, cs);
 
-		ll ans = fac(n);
+		ll ans = fac(n, 0);
 
 		ans += MOD2 - c1;
 		ans += MOD2 - c2;

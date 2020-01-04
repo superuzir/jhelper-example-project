@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Новый год и восходящая последовательность" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BNoviiGodIVoskhodyashchayaPosledovatelnost" cppPath="tasks/BNoviiGodIVoskhodyashchayaPosledovatelnost.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;1 1&#10;1 1&#10;1 2&#10;1 4&#10;1 3&#10;" output="9&#10;" active="true" />
+      <test input="3&#10;4 2 0 2 0&#10;6 9 9 8 8 7 7&#10;1 6&#10;" output="7&#10;" active="true" />
+      <test input="10&#10;3 62 24 39&#10;1 17&#10;1 99&#10;1 60&#10;1 64&#10;1 30&#10;2 79 29&#10;2 20 73&#10;2 85 37&#10;1 100&#10;" output="72&#10;" active="true" />
+      <test input="3&#10;1 1&#10;1 1&#10;2 1 1" output="0" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
