@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="F. Data Center" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="FDataCenter" cppPath="tasks/FDataCenter.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="36&#10;" output="24&#10;" active="true" />
+      <test input="13&#10;" output="28&#10;" active="true" />
+      <test input="1&#10;" output="4&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

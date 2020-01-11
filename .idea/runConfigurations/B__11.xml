@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Гиперсет" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BGiperset" cppPath="tasks/BGiperset.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3 3&#10;SET&#10;ETS&#10;TSE&#10;" output="1&#10;" active="true" />
+      <test input="3 4&#10;SETE&#10;ETSE&#10;TSES&#10;" output="0&#10;" active="true" />
+      <test input="5 4&#10;SETT&#10;TEST&#10;EEET&#10;ESTE&#10;STES&#10;" output="2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

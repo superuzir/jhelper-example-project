@@ -10,27 +10,38 @@ public:
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
-		vector<pair<pll, bool>> v(n);
+		auto a = read_vll(n);
+		auto b = read_vll(n);
 
-		forn(i, n) v[i].fi.fi = read_ll();
-		forn(i, n) v[i].fi.se = read_ll();
+		vb take(n);
 
-		soa(v);
+		forn(i, n){
+			ll same = 0;
 
-		itersame(all(v), [&](auto b, auto e){
-			if(e - b >= 2){
+			vb t(n);
+
+			forn(j, n){
+				if((a[i] | a[j]) == a[i]){
+					t[j] = true;
+				}
+
+				if(a[i] == a[j])
+					same++;
+			}
+
+			if(same > 1)
+			{
 				forn(i, n){
-					if(b->fi.fi == (b->fi.fi | v[i].fi.fi))
-						v[i].se = true;
+					take[i] = take[i] || t[i];
 				}
 			}
-		}, eq(fi.fi));
+		}
 
 		ll ans = 0;
 
-		forr(p, v){
-			if(p.se)
-				ans += p.fi.se;
+		forn(i, n){
+			if(take[i])
+				ans += b[i];
 		}
 
 		print ans;

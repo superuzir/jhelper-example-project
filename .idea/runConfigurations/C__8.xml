@@ -1,0 +1,30 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Гирлянда" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CGirlyanda" cppPath="tasks/CGirlyanda.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;0 5 0 2 3&#10;" output="2&#10;" active="true" />
+      <test input="7&#10;1 0 0 5 0 0 2&#10;" output="1&#10;" active="true" />
+      <test input="7&#10;0 1 0 5 0 2 0" output="1" active="true" />
+      <test input="3&#10;0 0 0" output="1" active="true" />
+      <test input="7&#10;0 0 1 0 0 0 0" output="1" active="true" />
+      <test input="7&#10;1 0 0 0 0 0 0" output="1" active="true" />
+      <test input="7&#10;0 0 0 0 0 0 1" output="1" active="true" />
+      <test input="7&#10;2 0 4 0 6 0 0" output="5" active="true" />
+      <test input="7&#10;2 0 4 0 0 0 6" output="4" active="true" />
+      <test input="7&#10;0 2 0 4 0 0 0" output="2" active="true" />
+      <test input="9&#10;0 2 0 4 0 0 6 0 0" output="4" active="true" />
+      <test input="9&#10;0 2 0 4 0 0 0 0 0" output="1" active="true" />
+      <test input="9&#10;0 0 0 0 0 2 0 4 0" output="1" active="true" />
+      <test input="9&#10;0 2 0 0 4 0 6 0 0" output="4" active="true" />
+      <test input="12&#10;0 2 0 4 0 6 0 0 0 0 0 0" output="1" active="true" />
+      <test input="2&#10;1 0" output="1" active="true" />
+      <test input="3&#10;1 0 3" output="2" active="true" />
+      <test input="3&#10;0 2 0" output="2" active="true" />
+      <test input="3&#10;0 1 0" output="1" active="true" />
+      <test input="7&#10;0 0 1 0 0 3 0" output="2" active="true" />
+      <test input="8&#10;1 0 7 2 4 0 0 0" output="2" active="true" />
+      <test input="1&#10;1" output="0" active="true" />
+      <test input="1&#10;0" output="0" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

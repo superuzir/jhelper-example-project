@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. Целые точки" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="ATselieTochki" cppPath="tasks/ATselieTochki.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;3&#10;1 3 2&#10;2&#10;0 3&#10;1&#10;1&#10;1&#10;1&#10;1&#10;2&#10;1&#10;1&#10;" output="3&#10;1&#10;0&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

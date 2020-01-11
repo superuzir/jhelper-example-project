@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D2. Оптимальные подпоследовательности (усложненная версия)" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="D2OptimalniePodposledovatelnostiUslozhnennayaVersiya" cppPath="tasks/D2OptimalniePodposledovatelnostiUslozhnennayaVersiya.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3&#10;10 20 10&#10;6&#10;1 1&#10;2 1&#10;2 2&#10;3 1&#10;3 2&#10;3 3&#10;" output="20&#10;10&#10;20&#10;10&#10;20&#10;10&#10;" active="true" />
+      <test input="7&#10;1 2 1 3 1 2 1&#10;9&#10;2 1&#10;2 2&#10;3 1&#10;3 2&#10;3 3&#10;1 1&#10;7 1&#10;7 7&#10;7 4&#10;" output="2&#10;3&#10;2&#10;3&#10;2&#10;3&#10;1&#10;1&#10;3&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

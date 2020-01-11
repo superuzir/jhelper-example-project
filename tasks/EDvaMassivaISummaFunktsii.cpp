@@ -2,13 +2,13 @@
 
 #include "../library/lib.hpp"
 
+const ll MOD = 998244353;
+
 class EDvaMassivaISummaFunktsii
 {
 public:
 	void solve(std::istream& in, std::ostream& out)
 	{
-		ll MOD2 = 998244353;
-
 		ll n = read_ll();
 		auto a = read_vll(n);
 		auto b = read_vll(n);
@@ -23,8 +23,8 @@ public:
 		ll ans = 0;
 
 		forn(i, n){
-			ans += ((a[i] % MOD2) * b[i]) % MOD2;
-			ans %= MOD2;
+			ans += (a[i] % MOD) * b[i];
+			ans %= MOD;
 		}
 
 		print ans;

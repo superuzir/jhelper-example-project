@@ -10,17 +10,20 @@ public:
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
-		auto s = read_s();
+		auto v = read_s();
 
-		vll v;
+		vll l;
 
-		itersameall(s, { v.pb(e - b); });
+		itersameall(v, {
+			l.pb(e - b);
+		});
 
-		ll ans = 0;
+		ll ans = n * (n + 1) / 2 - n;
 
-		forn1(i, v.size())
-			ans += v[i - 1] + v[i] - 1;
+		forn1(i, l.size()){
+			ans -= l[i - 1] + l[i] - 1;
+		}
 
-		print n * (n - 1) / 2 - ans;
+		print ans;
 	}
 };

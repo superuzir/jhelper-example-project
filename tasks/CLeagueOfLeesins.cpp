@@ -5,88 +5,84 @@
 class CLeagueOfLeesins
 {
 public:
-
 	void solve(std::istream& in, std::ostream& out)
 	{
 		ll n = read_ll();
 
-		map<pll, vll> m;
-
-		vll fr(100001);
+		vll fr(n + 1);
+		multimap<pll, ll> m;
 
 		forn(i, n - 2){
-			ll v[] = { read_ll(), read_ll(), read_ll() };
-			sort(v, v + 3);
+			auto v = read_vll(3);
 
-			m[{v[0], v[1]}].pb(v[2]);
-			m[{v[1], v[2]}].pb(v[0]);
-			m[{v[0], v[2]}].pb(v[1]);
+			soa(v);
 
+			forr(vv, v)
+				fr[vv]++;
 
-			fr[v[0]]++;
-			fr[v[1]]++;
-			fr[v[2]]++;
+			m.insert(pair(pll(v[0], v[1]), v[2]));
+			m.insert(pair(pll(v[0], v[2]), v[1]));
+			m.insert(pair(pll(v[1], v[2]), v[0]));
 		}
 
-//		print fr;
+		auto req = [&](pll key){
+			if(key.fi > key.se)
+				swap(key.fi, key.se);
 
-		auto st11 = find(all(fr), 1);
-		auto st12 = find(st11 + 1, fr.end(), 1);
-
-		auto st21 = find(all(fr), 2);
-		auto st22 = find(st21 + 1, fr.end(), 2);
-
-
-		ll s11 = st11 - fr.begin();
-		ll s12 = st12 - fr.begin();
-		ll s21 = st21 - fr.begin();
-		ll s22 = st22 - fr.begin();
-
-		auto sorted = [](pll p){
-			if(p.fi > p.se)
-				swap(p.fi, p.se);
-
-			return p;
+			return m.find(key);
 		};
-		
-		if(!m.count(sorted({s11, s21})))
-			s21 = s22;
 
-//		dbg(s11, s21);
+		auto rm = [&](pll key, ll value){
+			if(key.fi > key.se)
+				swap(key.fi, key.se);
 
-		vll ans;
+			auto range = m.equal_range(key);
 
-		set<ll> was;
+			for (auto it = range.first; it != range.second; )
+			{
+				if(it->second == value)
+					it = m.erase(it);
+				else
+					++it;
+			}
+		};
 
-		while(m.count(sorted({s11, s21}))){
+		pll f;
 
-			vll c = m[sorted({s11, s21})];
+		{
+			vpll b;
 
-//			dbg(c.size());
-
-			if(was.count(c[0])){
-				if(c.size() == 1){
-					ans.pb(s11);
-					ans.pb(s21);
-					break;
-				} else {
-					c[0] = c[1];
-				}
+			forn1(i, n + 1){
+				if(fr[i] == 1 || fr[i] == 2)
+					b.pb({fr[i], i});
 			}
 
-			was.insert(s11);
-			ans.pb(s11);
+			soa(b);
 
+			f = {b[0].se, b[2].se};
 
-			s11 = s21;
-			s21 = c[0];
-
-
-
-//			dbg(s11, s21);
+			if(req(f) == m.end())
+				f = {b[0].se, b[3].se};
 		}
 
-//		ans.pb(s21);
+//		dbg(f);
+
+		vll ans = {f.fi, f.se};
+
+		forn(i, n - 2)
+		{
+			auto nx = req(f);
+
+			ll a[3] = {f.fi, f.se, nx->se};
+
+			rm({a[0], a[1]}, a[2]);
+			rm({a[0], a[2]}, a[1]);
+			rm({a[1], a[2]}, a[0]);
+
+			ans.pb(a[2]);
+
+			f = {a[1], a[2]};
+		}
 
 		answer(ans, out);
 	}
