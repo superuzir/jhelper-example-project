@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B. Заполнение таблицы" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="BZapolnenieTablitsi" cppPath="tasks/BZapolnenieTablitsi.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="3 4&#10;0 3 1&#10;0 2 3 0&#10;" output="2&#10;" active="true" />
+      <test input="1 1&#10;0&#10;1&#10;" output="0&#10;" active="true" />
+      <test input="19 16&#10;16 16 16 16 15 15 0 5 0 4 9 9 1 4 4 0 8 16 12&#10;6 12 19 15 8 6 19 19 14 6 9 16 10 11 15 4&#10;" output="797922655&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

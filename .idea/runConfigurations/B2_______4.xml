@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="B2. Социальная сеть (сложная версия)" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="B2SotsialnayaSetSlozhnayaVersiya" cppPath="tasks/B2SotsialnayaSetSlozhnayaVersiya.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="7 2&#10;1 2 3 2 1 3 2&#10;" output="2&#10;2 1 &#10;" active="true" />
+      <test input="10 4&#10;2 3 3 1 1 2 1 2 3 3&#10;" output="3&#10;1 3 2 &#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

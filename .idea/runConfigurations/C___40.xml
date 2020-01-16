@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Два массива" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CDvaMassiva" cppPath="tasks/CDvaMassiva.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="2 2&#10;" output="5&#10;" active="true" />
+      <test input="10 1&#10;" output="55&#10;" active="true" />
+      <test input="723 9&#10;" output="157557417&#10;" active="true" />
+      <test input="5 5" active="false" />
+      <test input="1000 10" active="false" />
+      <test input="1 1" output="1" active="true" />
+      <test input="1 10" output="1" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
