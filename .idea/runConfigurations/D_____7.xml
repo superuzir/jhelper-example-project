@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D. Арома и её поиск" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="DAromaIYeyoPoisk" cppPath="tasks/DAromaIYeyoPoisk.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="1 1 2 3 1 0&#10;2 4 20&#10;" output="3&#10;" active="true" />
+      <test input="1 1 2 3 1 0&#10;15 27 26&#10;" output="2&#10;" active="true" />
+      <test input="1 1 2 3 1 0&#10;2 2 1&#10;" output="0&#10;" active="true" />
+      <test input="1 1 2 2 0 0&#10;1 1 10000000000000000" active="true" />
+      <test input="10000000000000000 10000000000000000 2 2 0 0&#10;10000000000000000 10000000000000000 10000000000000000" output="1" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>

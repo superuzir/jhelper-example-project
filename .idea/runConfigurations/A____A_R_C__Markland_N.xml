@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="A. КоннеР и A.R.C. Markland-N" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="AKonneRIARCMarklandN" cppPath="tasks/AKonneRIARCMarklandN.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;5 2 3&#10;1 2 3&#10;4 3 3&#10;4 1 2&#10;10 2 6&#10;1 2 3 4 5 7&#10;2 1 1&#10;2&#10;100 76 8&#10;76 75 36 67 41 74 10 77&#10;" output="2&#10;0&#10;4&#10;0&#10;2&#10;" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
