@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="C. Произведение трех чисел" type="name.admitriev.jhelper.configuration.TaskConfigurationType" factoryName="Task" className="CProizvedenieTrekhChisel" cppPath="tasks/CProizvedenieTrekhChisel.cpp" inputType="STANDARD" outputType="STANDARD" testType="SINGLE">
+    <tests>
+      <test input="5&#10;64&#10;32&#10;97&#10;2&#10;12345&#10;" output="YES&#10;2 4 8 &#10;NO&#10;NO&#10;NO&#10;YES&#10;3 5 823 &#10;" active="true" />
+      <test input="1&#10;96" output="YES&#10;2 3 16" active="true" />
+      <test input="1&#10;12" output="NO" active="true" />
+      <test input="1&#10;8" output="NO" active="true" />
+    </tests>
+    <method v="2" />
+  </configuration>
+</component>
